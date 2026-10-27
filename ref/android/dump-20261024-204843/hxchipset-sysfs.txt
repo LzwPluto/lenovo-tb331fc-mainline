@@ -1,0 +1,8 @@
+﻿/sys/firmware/devicetree/base/soc/qcom,qupv3_0_geni_se@4ac0000/spi@4a80000/touch@0/himax,panel-coords
+/sys/firmware/devicetree/base/soc/qcom,qupv3_0_geni_se@4ac0000/spi@4a80000/touch@0/himax,rst-gpio
+/sys/firmware/devicetree/base/soc/qcom,qupv3_0_geni_se@4ac0000/spi@4a80000/touch@0/himax,display-coords
+/sys/firmware/devicetree/base/soc/qcom,qupv3_0_geni_se@4ac0000/spi@4a80000/touch@0/himax,irq-gpio
+/sys/module/panel_event_notifier/holders/hxchipset
+/sys/module/hxchipset
+/sys/module/msm_drm/holders/hxchipset
+/sys/module/nopmi_chg/holders/hxchipset

@@ -1,0 +1,48 @@
+﻿regulator-dummy
+pm6125_s3_level 256 enabled
+pm6125_l1 950000 disabled
+pm6125_l2_level 16 disabled
+pm6125_l3_level 16 disabled
+pm6125_l4 880000 enabled
+pm6125_l5 1650000 disabled
+pm6125_l6 624000 disabled
+pm6125_l7 1256000 disabled
+pm6125_l8 640000 enabled
+pm6125_l9 1800000 enabled
+pm6125_l10 1800000 disabled
+pm6125_s3_floor_level 16 disabled
+pm6125_l11 1800000 enabled
+pm6125_l12 1704000 enabled
+pm6125_l13 1800000 disabled
+pm6125_l14 1800000 disabled
+pm6125_l15 3050000 enabled
+pm6125_l16 1800000 enabled
+pm6125_l17 1304000 enabled
+pm6125_l18 1200000 enabled
+pm6125_l19 1620000 disabled
+pm6125_l20 1620000 disabled
+pm6125_s3_level_ao 16 disabled
+pm6125_l21 1600000 disabled
+pm6125_l22 2950000 disabled
+pm6125_l23 3200000 enabled
+pm6125_l24 2960000 enabled
+gcc_camss_top_gdsc disabled
+gcc_ufs_phy_gdsc enabled
+gcc_usb30_prim_gdsc enabled
+gcc_vcodec0_gdsc disabled
+gcc_venus_gdsc disabled
+hlos1_vote_turing_mmu_tbu1_gdsc disabled
+pm6125_s5_level 16 disabled
+hlos1_vote_turing_mmu_tbu0_gdsc disabled
+hlos1_vote_mm_snoc_mmu_tbu_rt_gdsc disabled
+hlos1_vote_mm_snoc_mmu_tbu_nrt_gdsc disabled
+mdss_core_gdsc enabled
+gpu_cx_gdsc disabled
+gpu_gx_gdsc disabled
+refgen enabled
+hsphy@1613000 disabled
+pm6125_s5_floor_level 16 disabled
+pm6125_s5_level_ao 16 disabled
+pm6125_s6 1352000 disabled
+pm6125_s7 2040000 disabled
+pm6125_s8 1128000 disabled

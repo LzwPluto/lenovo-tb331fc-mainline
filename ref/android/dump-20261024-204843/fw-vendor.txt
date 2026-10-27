@@ -1,0 +1,69 @@
+﻿/vendor/firmware:
+total 12104
+-rw-r--r-- 1 root root   261120 2009-01-01 08:00 Himax_firmware.bin
+-rw-r--r-- 1 root root   261120 2009-01-01 08:00 Himax_mpfw.bin
+-rw-r--r-- 1 root root      148 2009-01-01 08:00 a610_zap.b00
+-rw-r--r-- 1 root root     6712 2009-01-01 08:00 a610_zap.b01
+-rw-r--r-- 1 root root     2096 2009-01-01 08:00 a610_zap.b02
+-rw-r--r-- 1 root root    14384 2009-01-01 08:00 a610_zap.elf
+-rw-r--r-- 1 root root     6860 2009-01-01 08:00 a610_zap.mdt
+-rw-r--r-- 1 root root    32504 2009-01-01 08:00 a630_sqe.fw
+-rw-r--r-- 1 root root    43068 2009-01-01 08:00 a660_sqe.fw
+-rw-r--r-- 1 root root    55888 2009-01-01 08:00 a662_gmu.bin
+-rw-r--r-- 1 root root      148 2009-01-01 08:00 a662_zap.b00
+-rw-r--r-- 1 root root     1976 2009-01-01 08:00 a662_zap.b01
+-rw-r--r-- 1 root root     3896 2009-01-01 08:00 a662_zap.b02
+-rw-r--r-- 1 root root     6072 2009-01-01 08:00 a662_zap.elf
+-rw-r--r-- 1 root root    12088 2009-01-01 08:00 a662_zap.mbn
+-rw-r--r-- 1 root root     4044 2009-01-01 08:00 a662_zap.mdt
+-rw-r--r-- 1 root root    35444 2009-01-01 08:00 a710_sqe.fw
+-rw-r--r-- 1 root root      148 2009-01-01 08:00 a710_zap.b00
+-rw-r--r-- 1 root root     1948 2009-01-01 08:00 a710_zap.b01
+-rw-r--r-- 1 root root     3896 2009-01-01 08:00 a710_zap.b02
+-rw-r--r-- 1 root root     6044 2009-01-01 08:00 a710_zap.elf
+-rw-r--r-- 1 root root    12088 2009-01-01 08:00 a710_zap.mbn
+-rw-r--r-- 1 root root     4044 2009-01-01 08:00 a710_zap.mdt
+-rw-r--r-- 1 root root    74484 2009-01-01 08:00 a730_sqe.fw
+-rw-r--r-- 1 root root      148 2009-01-01 08:00 a730_zap.b00
+-rw-r--r-- 1 root root     2236 2009-01-01 08:00 a730_zap.b01
+-rw-r--r-- 1 root root     3896 2009-01-01 08:00 a730_zap.b02
+-rw-r--r-- 1 root root     6332 2009-01-01 08:00 a730_zap.elf
+-rw-r--r-- 1 root root    12088 2009-01-01 08:00 a730_zap.mbn
+-rw-r--r-- 1 root root     4044 2009-01-01 08:00 a730_zap.mdt
+-rw-r--r-- 1 root root   433904 2009-01-01 08:00 aw883xx_acf.bin
+-rw-r--r-- 1 root root    57272 2009-01-01 08:00 gmu_gen70000.bin
+-rw-r--r-- 1 root root    44482 2009-01-01 08:00 hx_criteria.csv
+-rw-r--r-- 1 root root      212 2009-01-01 08:00 ipa_fws.b00
+-rw-r--r-- 1 root root     6808 2009-01-01 08:00 ipa_fws.b01
+-rw-r--r-- 1 root root    12040 2009-01-01 08:00 ipa_fws.b02
+-rw-r--r-- 1 root root      128 2009-01-01 08:00 ipa_fws.b03
+-rw-r--r-- 1 root root      320 2009-01-01 08:00 ipa_fws.b04
+-rw-r--r-- 1 root root    29120 2009-01-01 08:00 ipa_fws.elf
+-rw-r--r-- 1 root root     7020 2009-01-01 08:00 ipa_fws.mdt
+-rw-r--r-- 1 root root   196608 2009-01-01 08:00 novatek_ts_fw.bin
+-rw-r--r-- 1 root root   196608 2009-01-01 08:00 novatek_ts_fw_csot.bin
+-rw-r--r-- 1 root root   196608 2009-01-01 08:00 novatek_ts_mp.bin
+-rw-r--r-- 1 root root   196608 2009-01-01 08:00 novatek_ts_mp_csot.bin
+-rw-r--r-- 1 root root  1852708 2009-01-01 08:00 venus.mbn
+-rw-r--r-- 1 root root  1852708 2009-01-01 08:00 venus_4mb.mbn
+-rw-r--r-- 1 root root  1852708 2009-01-01 08:00 venus_4mb_unsigned.mbn
+-rw-r--r-- 1 root root  1852708 2009-01-01 08:00 venus_4mb_v6.mbn
+-rw-r--r-- 1 root root  1860200 2009-01-01 08:00 venus_4mb_v7.mbn
+-rw-r--r-- 1 root root  1852708 2009-01-01 08:00 venus_unsigned.mbn
+-rw-r--r-- 1 root root  1852708 2009-01-01 08:00 venus_v6.mbn
+-rw-r--r-- 1 root root  1860200 2009-01-01 08:00 venus_v7.mbn
+-rw-r--r-- 1 root root  2024040 2009-01-01 08:00 vpu20_1v.mbn
+-rw-r--r-- 1 root root  2016484 2009-01-01 08:00 vpu20_1v_unsigned.mbn
+-rw-r--r-- 1 root root  2024040 2009-01-01 08:00 vpu20_4v.mbn
+-rw-r--r-- 1 root root  2017300 2009-01-01 08:00 vpu20_4v_unsigned.mbn
+drwxr-xr-x 3 root shell    4096 2009-01-01 08:00 wlan
+lrw-r--r-- 1 root root       34 2009-01-01 08:00 wlanmdsp.otaupdate -> /data/vendor/firmware/wlanmdsp.mbn
+
+/vendor/firmware/wlan:
+total 4
+drwxr-xr-x 2 root shell 4096 2009-01-01 08:00 qca_cld
+
+/vendor/firmware/wlan/qca_cld:
+total 0
+lrw-r--r-- 1 root root 35 2009-01-01 08:00 WCNSS_qcom_cfg.ini -> /vendor/etc/wifi/WCNSS_qcom_cfg.ini
+lrw-r--r-- 1 root root 32 2009-01-01 08:00 wlan_mac.bin -> /mnt/vendor/persist/wlan_mac.bin

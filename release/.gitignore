@@ -1,0 +1,57 @@
+﻿# 构建产物
+build/
+out/
+*.o
+*.ko
+# *.img  —— prebuilt/ 下的镜像是刻意提交的，见下
+*.cpio
+*.dtb
+*.tar.gz
+*.zip
+
+# 厂商固件（版权原因，绝不提交）
+firmware/
+*-firmware/
+vendor-firmware/
+nonhlos/
+btfm/
+*.mbn
+*.b00
+*.b01
+*.b02
+*.b03
+*.b04
+*.b05
+*.b06
+*.b07
+*.b08
+*.b09
+*.b1?
+*.b2?
+*.mdt
+*.tlv
+a630_sqe.fw
+novatek_ts_fw*.bin
+Himax_firmware.bin
+bdwlan*
+wlanmdsp*
+
+# 从设备 dump 出来的东西
+vendor.fdt
+vendor.dts
+*.fdt
+abl_decompressed.bin
+LinuxLoader.efi
+super_*.img
+userdata_*.img
+metadata_*.img
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+*~
+
+# 除了 prebuilt 里的镜像
+!prebuilt/*.img
+

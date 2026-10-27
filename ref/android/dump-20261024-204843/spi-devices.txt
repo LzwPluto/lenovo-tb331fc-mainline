@@ -1,0 +1,2 @@
+﻿total 0
+lrwxrwxrwx 1 root root 0 1970-01-01 08:01 spi0.0 -> ../../../devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a80000.spi/spi_master/spi0/spi0.0

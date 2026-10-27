@@ -1,0 +1,469 @@
+000000000000369c <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac>:
+    369c:	paciasp
+    36a0:	sub	sp, sp, #0x120
+    36a4:	str	x30, [x18], #8
+    36a8:	stp	x29, x30, [sp, #192]
+    36ac:	add	x29, sp, #0xc0
+    36b0:	stp	x28, x27, [sp, #208]
+    36b4:	stp	x26, x25, [sp, #224]
+    36b8:	stp	x24, x23, [sp, #240]
+    36bc:	stp	x22, x21, [sp, #256]
+    36c0:	stp	x20, x19, [sp, #272]
+    36c4:	mrs	x8, sp_el0
+    36c8:	adrp	x19, 0 <__cfi_check>
+    36cc:	ldr	x8, [x8, #1504]
+    36d0:	add	x9, sp, #0x30
+    36d4:	adrp	x26, 8 <__cfi_check+0x8>
+    36d8:	stur	x8, [x29, #-16]
+    36dc:	ldrb	w8, [x19]
+    36e0:	str	wzr, [sp, #168]
+    36e4:	str	xzr, [x9, #112]
+    36e8:	stp	xzr, xzr, [sp, #144]
+    36ec:	stp	xzr, xzr, [sp, #128]
+    36f0:	stp	xzr, xzr, [sp, #112]
+    36f4:	stp	xzr, xzr, [sp, #96]
+    36f8:	stp	xzr, xzr, [sp, #80]
+    36fc:	stp	xzr, xzr, [sp, #64]
+    3700:	stp	xzr, xzr, [sp, #48]
+    3704:	strh	wzr, [sp, #40]
+    3708:	str	xzr, [sp, #32]
+    370c:	tbnz	w8, #0, 3728 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x8c>
+    3710:	ldr	x8, [x26]
+    3714:	mov	w1, #0x1388                	// #5000
+    3718:	mov	w2, wzr
+    371c:	ldr	x8, [x8, #8]
+    3720:	add	x0, x8, #0x240
+    3724:	bl	0 <pm_wakeup_dev_event>
+    3728:	ldr	x8, [x26]
+    372c:	add	x0, x8, #0xd8
+    3730:	bl	0 <mutex_lock>
+    3734:	ldr	x8, [x26]
+    3738:	ldrb	w9, [x8, #421]
+    373c:	cbz	w9, 3754 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0xb8>
+    3740:	add	x0, x8, #0x1a8
+    3744:	mov	w1, #0x7d                  	// #125
+    3748:	bl	0 <wait_for_completion_timeout>
+    374c:	cbz	w0, 4070 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x9d4>
+    3750:	ldr	x8, [x26]
+    3754:	ldr	x0, [x8]
+    3758:	add	x1, sp, #0x30
+    375c:	mov	w2, #0x6d                  	// #109
+    3760:	bl	7b4 <CTP_SPI_READ>
+    3764:	tbnz	w0, #31, 3f88 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x8ec>
+    3768:	adrp	x8, 0 <__cfi_check>
+    376c:	ldrb	w4, [sp, #49]
+    3770:	ldrb	w9, [x8]
+    3774:	add	w10, w4, #0x3
+    3778:	and	w10, w10, #0xff
+    377c:	cmp	w10, #0x1
+    3780:	add	w9, w9, #0x1
+    3784:	strb	w9, [x8]
+    3788:	b.hi	38e4 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x248>  // b.pmore
+    378c:	ldrb	w10, [sp, #50]
+    3790:	add	w10, w10, #0x3
+    3794:	and	w10, w10, #0xff
+    3798:	cmp	w10, #0x1
+    379c:	b.hi	3930 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x294>  // b.pmore
+    37a0:	ldrb	w10, [sp, #51]
+    37a4:	add	w10, w10, #0x3
+    37a8:	and	w10, w10, #0xff
+    37ac:	cmp	w10, #0x1
+    37b0:	b.hi	3930 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x294>  // b.pmore
+    37b4:	ldrb	w10, [sp, #52]
+    37b8:	add	w10, w10, #0x3
+    37bc:	and	w10, w10, #0xff
+    37c0:	cmp	w10, #0x1
+    37c4:	b.hi	3930 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x294>  // b.pmore
+    37c8:	ldrb	w10, [sp, #53]
+    37cc:	add	w10, w10, #0x3
+    37d0:	and	w10, w10, #0xff
+    37d4:	cmp	w10, #0x1
+    37d8:	b.hi	3930 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x294>  // b.pmore
+    37dc:	ldrb	w10, [sp, #54]
+    37e0:	add	w10, w10, #0x3
+    37e4:	and	w10, w10, #0xff
+    37e8:	cmp	w10, #0x1
+    37ec:	b.hi	3930 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x294>  // b.pmore
+    37f0:	and	w9, w9, #0xff
+    37f4:	cmp	w9, #0xa
+    37f8:	b.ls	3934 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x298>  // b.plast
+    37fc:	adrp	x0, 0 <__cfi_check>
+    3800:	adrp	x1, 0 <__cfi_check>
+    3804:	adrp	x2, 0 <__cfi_check>
+    3808:	add	x0, x0, #0x0
+    380c:	add	x1, x1, #0x0
+    3810:	add	x2, x2, #0x0
+    3814:	mov	w3, #0x682                 	// #1666
+    3818:	strb	wzr, [x8]
+    381c:	bl	0 <_printk>
+    3820:	ldrb	w8, [sp, #49]
+    3824:	cmp	w8, #0xfe
+    3828:	b.ne	3890 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x1f4>  // b.any
+    382c:	ldr	x8, [x26]
+    3830:	mov	w1, #0xaa                  	// #170
+    3834:	ldr	w0, [x8, #396]
+    3838:	bl	bd0 <nvt_write_addr>
+    383c:	mov	w0, #0xf                   	// #15
+    3840:	bl	0 <msleep>
+    3844:	ldr	x8, [x26]
+    3848:	ldr	x8, [x8, #264]
+    384c:	ldr	w0, [x8, #136]
+    3850:	cbz	w0, 3890 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x1f4>
+    3854:	mov	w1, #0xa5                  	// #165
+    3858:	bl	bd0 <nvt_write_addr>
+    385c:	ldr	x8, [x26]
+    3860:	mov	w10, #0xff                  	// #255
+    3864:	add	x1, sp, #0x1c
+    3868:	mov	w2, #0x3                   	// #3
+    386c:	ldr	x9, [x8, #264]
+    3870:	str	w10, [sp, #28]
+    3874:	ldr	x0, [x8]
+    3878:	ldr	w9, [x9]
+    387c:	lsr	w11, w9, #15
+    3880:	lsr	w9, w9, #7
+    3884:	strb	w11, [sp, #29]
+    3888:	strb	w9, [sp, #30]
+    388c:	bl	988 <CTP_SPI_WRITE>
+    3890:	ldr	x8, [x26]
+    3894:	ldr	x8, [x8, #264]
+    3898:	ldr	w0, [x8, #116]
+    389c:	bl	1f04 <nvt_read_fw_history>
+    38a0:	ldr	x8, [x26]
+    38a4:	ldr	x8, [x8, #264]
+    38a8:	ldr	w0, [x8, #120]
+    38ac:	bl	1f04 <nvt_read_fw_history>
+    38b0:	adrp	x8, 18 <__cfi_check+0x18>
+    38b4:	ldr	x0, [x8]
+    38b8:	bl	85d8 <nvt_update_firmware>
+    38bc:	ldr	x8, [x26]
+    38c0:	add	x0, x8, #0xd8
+    38c4:	bl	0 <mutex_unlock>
+    38c8:	adrp	x8, 0 <__cfi_check>
+    38cc:	adrp	x2, 0 <__cfi_check>
+    38d0:	add	x2, x2, #0x0
+    38d4:	mov	w0, #0x20                  	// #32
+    38d8:	ldr	x1, [x8]
+    38dc:	bl	0 <queue_work_on>
+    38e0:	b	409c <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0xa00>
+    38e4:	cmp	w4, #0x77
+    38e8:	strb	wzr, [x8]
+    38ec:	b.ne	3934 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x298>  // b.any
+    38f0:	ldrb	w8, [sp, #50]
+    38f4:	cmp	w8, #0x77
+    38f8:	b.ne	3934 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x298>  // b.any
+    38fc:	ldrb	w8, [sp, #51]
+    3900:	cmp	w8, #0x77
+    3904:	b.ne	3934 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x298>  // b.any
+    3908:	ldrb	w8, [sp, #52]
+    390c:	cmp	w8, #0x77
+    3910:	b.ne	3934 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x298>  // b.any
+    3914:	ldrb	w8, [sp, #53]
+    3918:	cmp	w8, #0x77
+    391c:	b.ne	3934 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x298>  // b.any
+    3920:	ldrb	w8, [sp, #54]
+    3924:	cmp	w8, #0x77
+    3928:	b.eq	4090 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x9f4>  // b.none
+    392c:	b	3934 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x298>
+    3930:	strb	wzr, [x8]
+    3934:	add	x9, sp, #0x30
+    3938:	mov	x10, xzr
+    393c:	mov	w8, wzr
+    3940:	orr	x9, x9, #0x1
+    3944:	ldrb	w11, [x9, x10]
+    3948:	add	x12, x10, #0x1
+    394c:	mov	x10, x12
+    3950:	cmp	x12, #0x40
+    3954:	add	w11, w8, w11
+    3958:	and	w8, w11, #0xff
+    395c:	b.ne	3944 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x2a8>  // b.any
+    3960:	ldrb	w5, [sp, #113]
+    3964:	neg	w8, w11
+    3968:	and	w6, w8, #0xff
+    396c:	cmp	w6, w5
+    3970:	b.ne	3fb0 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x914>  // b.any
+    3974:	ldrb	w8, [x19]
+    3978:	cmp	w8, #0x1
+    397c:	b.ne	3af8 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x45c>  // b.any
+    3980:	ldr	x8, [x26]
+    3984:	ldrb	w9, [x8, #189]
+    3988:	cbz	w9, 3b9c <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x500>
+    398c:	mov	x24, xzr
+    3990:	mov	x25, xzr
+    3994:	mov	w23, wzr
+    3998:	add	x27, sp, #0x30
+    399c:	mov	w28, #0x2ee0                	// #12000
+    39a0:	b	3a70 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x3d4>
+    39a4:	add	x9, x27, x24
+    39a8:	add	x10, x27, x25
+    39ac:	mov	w11, #0x1                   	// #1
+    39b0:	mov	w1, #0x3                   	// #3
+    39b4:	mov	w2, #0x2f                  	// #47
+    39b8:	ldrb	w9, [x9, #6]
+    39bc:	ldrb	w10, [x10, #99]
+    39c0:	cmp	w9, #0x0
+    39c4:	csinc	w21, w9, wzr, ne	// ne = any
+    39c8:	add	x9, sp, #0x20
+    39cc:	cmp	w10, #0x0
+    39d0:	strb	w11, [x9, w3, uxtw]
+    39d4:	csinc	w22, w10, wzr, ne	// ne = any
+    39d8:	ldr	x0, [x8, #8]
+    39dc:	bl	0 <input_event>
+    39e0:	ldr	x8, [x26]
+    39e4:	mov	w1, wzr
+    39e8:	mov	w2, #0x1                   	// #1
+    39ec:	ldr	x0, [x8, #8]
+    39f0:	bl	0 <input_mt_report_slot_state>
+    39f4:	ldr	x8, [x26]
+    39f8:	mov	w1, #0x3                   	// #3
+    39fc:	mov	w2, #0x35                  	// #53
+    3a00:	mov	w3, w20
+    3a04:	ldr	x0, [x8, #8]
+    3a08:	bl	0 <input_event>
+    3a0c:	ldr	x8, [x26]
+    3a10:	mov	w1, #0x3                   	// #3
+    3a14:	mov	w2, #0x36                  	// #54
+    3a18:	mov	w3, w19
+    3a1c:	ldr	x0, [x8, #8]
+    3a20:	bl	0 <input_event>
+    3a24:	ldr	x8, [x26]
+    3a28:	mov	w1, #0x3                   	// #3
+    3a2c:	mov	w2, #0x30                  	// #48
+    3a30:	mov	w3, w21
+    3a34:	ldr	x0, [x8, #8]
+    3a38:	bl	0 <input_event>
+    3a3c:	ldr	x8, [x26]
+    3a40:	mov	w1, #0x3                   	// #3
+    3a44:	mov	w2, #0x3a                  	// #58
+    3a48:	mov	w3, w22
+    3a4c:	ldr	x0, [x8, #8]
+    3a50:	bl	0 <input_event>
+    3a54:	add	w23, w23, #0x1
+    3a58:	ldr	x8, [x26]
+    3a5c:	ldrb	w9, [x8, #189]
+    3a60:	add	x25, x25, #0x1
+    3a64:	add	x24, x24, #0x6
+    3a68:	cmp	x25, x9
+    3a6c:	b.cs	3b08 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x46c>  // b.hs, b.nlast
+    3a70:	cmp	x25, #0x15
+    3a74:	b.eq	3af4 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x458>  // b.none
+    3a78:	add	x10, x27, x24
+    3a7c:	ldrb	w11, [x10, #1]
+    3a80:	lsr	w10, w11, #3
+    3a84:	cmp	w11, #0x8
+    3a88:	ccmp	w10, w9, #0x2, cs	// cs = hs, nlast
+    3a8c:	b.hi	3a5c <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x3c0>  // b.pmore
+    3a90:	and	w9, w11, #0x7
+    3a94:	sub	w9, w9, #0x1
+    3a98:	cmp	w9, #0x1
+    3a9c:	b.hi	3a5c <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x3c0>  // b.pmore
+    3aa0:	cmp	x24, #0x79
+    3aa4:	b.hi	3af4 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x458>  // b.pmore
+    3aa8:	cmp	x24, #0x77
+    3aac:	b.hi	3af4 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x458>  // b.pmore
+    3ab0:	add	x9, x27, x24
+    3ab4:	ldrh	w11, [x9, #2]
+    3ab8:	lsl	w11, w11, #16
+    3abc:	rev	w20, w11
+    3ac0:	cmp	w20, w28
+    3ac4:	b.hi	3a5c <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x3c0>  // b.pmore
+    3ac8:	ldrh	w9, [x9, #4]
+    3acc:	lsl	w9, w9, #16
+    3ad0:	rev	w19, w9
+    3ad4:	mov	w9, #0x4b00                	// #19200
+    3ad8:	cmp	w19, w9
+    3adc:	b.hi	3a5c <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x3c0>  // b.pmore
+    3ae0:	cmp	x24, #0x75
+    3ae4:	b.hi	3af4 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x458>  // b.pmore
+    3ae8:	sub	w3, w10, #0x1
+    3aec:	cmp	w3, #0x9
+    3af0:	b.ls	39a4 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x308>  // b.plast
+    3af4:	brk	#0x5512
+    3af8:	lsr	w0, w4, #3
+    3afc:	add	x1, sp, #0x30
+    3b00:	bl	1bb8 <nvt_ts_wakeup_gesture_report_customize>
+    3b04:	b	4090 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x9f4>
+    3b08:	cbz	w9, 3ba0 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x504>
+    3b0c:	mov	x19, xzr
+    3b10:	add	x20, sp, #0x20
+    3b14:	b	3b28 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x48c>
+    3b18:	ldrb	w9, [x8, #189]
+    3b1c:	add	x19, x19, #0x1
+    3b20:	cmp	x19, x9
+    3b24:	b.cs	3ba0 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x504>  // b.hs, b.nlast
+    3b28:	cmp	x19, #0xa
+    3b2c:	b.eq	3af4 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x458>  // b.none
+    3b30:	ldrb	w9, [x20, x19]
+    3b34:	cmp	w9, #0x1
+    3b38:	b.eq	3b18 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x47c>  // b.none
+    3b3c:	ldr	x0, [x8, #8]
+    3b40:	mov	w1, #0x3                   	// #3
+    3b44:	mov	w2, #0x2f                  	// #47
+    3b48:	mov	w3, w19
+    3b4c:	bl	0 <input_event>
+    3b50:	ldr	x8, [x26]
+    3b54:	mov	w1, #0x3                   	// #3
+    3b58:	mov	w2, #0x30                  	// #48
+    3b5c:	mov	w3, wzr
+    3b60:	ldr	x0, [x8, #8]
+    3b64:	bl	0 <input_event>
+    3b68:	ldr	x8, [x26]
+    3b6c:	mov	w1, #0x3                   	// #3
+    3b70:	mov	w2, #0x3a                  	// #58
+    3b74:	mov	w3, wzr
+    3b78:	ldr	x0, [x8, #8]
+    3b7c:	bl	0 <input_event>
+    3b80:	ldr	x8, [x26]
+    3b84:	mov	w1, wzr
+    3b88:	mov	w2, wzr
+    3b8c:	ldr	x0, [x8, #8]
+    3b90:	bl	0 <input_mt_report_slot_state>
+    3b94:	ldr	x8, [x26]
+    3b98:	b	3b18 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x47c>
+    3b9c:	mov	w23, wzr
+    3ba0:	cmp	w23, #0x0
+    3ba4:	ldr	x0, [x8, #8]
+    3ba8:	cset	w3, gt
+    3bac:	mov	w1, #0x1                   	// #1
+    3bb0:	mov	w2, #0x14a                 	// #330
+    3bb4:	bl	0 <input_event>
+    3bb8:	ldr	x8, [x26]
+    3bbc:	mov	w1, wzr
+    3bc0:	mov	w2, wzr
+    3bc4:	mov	w3, wzr
+    3bc8:	ldr	x0, [x8, #8]
+    3bcc:	bl	0 <input_event>
+    3bd0:	ldr	x8, [x26]
+    3bd4:	ldrb	w9, [x8, #345]
+    3bd8:	cbz	w9, 4094 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x9f8>
+    3bdc:	ldrb	w9, [sp, #114]
+    3be0:	cmp	w9, #0xff
+    3be4:	b.eq	3e80 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x7e4>  // b.none
+    3be8:	cmp	w9, #0xf0
+    3bec:	b.eq	3f6c <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x8d0>  // b.none
+    3bf0:	cmp	w9, #0x1
+    3bf4:	b.ne	40dc <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0xa40>  // b.any
+    3bf8:	ldurh	w9, [sp, #115]
+    3bfc:	lsl	w9, w9, #16
+    3c00:	rev	w20, w9
+    3c04:	mov	w9, #0x2ee0                	// #12000
+    3c08:	cmp	w20, w9
+    3c0c:	b.hi	4094 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x9f8>  // b.pmore
+    3c10:	ldurh	w9, [sp, #117]
+    3c14:	lsl	w9, w9, #16
+    3c18:	rev	w19, w9
+    3c1c:	mov	w9, #0x4b00                	// #19200
+    3c20:	cmp	w19, w9
+    3c24:	b.hi	4094 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0x9f8>  // b.pmore
+    3c28:	ldurh	w9, [sp, #119]
+    3c2c:	mov	w1, #0x3                   	// #3
+    3c30:	ldurh	w10, [sp, #123]
+    3c34:	mov	w2, wzr
+    3c38:	ldrb	w28, [sp, #125]
+    3c3c:	mov	w3, w20
+    3c40:	ldr	x0, [x8, #352]
+    3c44:	lsl	x9, x9, #48
+    3c48:	ldrsb	w22, [sp, #121]
+    3c4c:	lsl	w10, w10, #16
+    3c50:	ldrsb	w23, [sp, #122]
+    3c54:	rev	x21, x9
+    3c58:	rev	w25, w10
+    3c5c:	and	w24, w28, #0x1
+    3c60:	bl	0 <input_event>
+    3c64:	ldr	x8, [x26]
+    3c68:	mov	w1, #0x3                   	// #3
+    3c6c:	mov	w2, #0x1                   	// #1
+    3c70:	mov	w3, w19
+    3c74:	mov	w27, #0x1                   	// #1
+    3c78:	ldr	x0, [x8, #352]
+    3c7c:	bl	0 <input_event>
+    3c80:	ldr	x8, [x26]
+    3c84:	mov	w1, #0x3                   	// #3
+    3c88:	mov	w2, #0x18                  	// #24
+    3c8c:	mov	w3, w21
+    3c90:	ldr	x0, [x8, #352]
+    3c94:	bl	0 <input_event>
+    3c98:	ldr	x8, [x26]
+    3c9c:	cmp	w21, #0x0
+    3ca0:	cset	w3, ne	// ne = any
+    3ca4:	mov	w1, #0x1                   	// #1
+    3ca8:	mov	w2, #0x14a                 	// #330
+    3cac:	ldr	x0, [x8, #352]
+    3cb0:	bl	0 <input_event>
+    3cb4:	ldr	x8, [x26]
+    3cb8:	mov	w1, #0x3                   	// #3
+    3cbc:	mov	w2, #0x1a                  	// #26
+    3cc0:	mov	w3, w22
+    3cc4:	ldr	x0, [x8, #352]
+    3cc8:	bl	0 <input_event>
+    3ccc:	ldr	x8, [x26]
+    3cd0:	mov	w1, #0x3                   	// #3
+    3cd4:	mov	w2, #0x1b                  	// #27
+    3cd8:	mov	w3, w23
+    3cdc:	ldr	x0, [x8, #352]
+    3ce0:	bl	0 <input_event>
+    3ce4:	ldr	x8, [x26]
+    3ce8:	mov	w1, #0x3                   	// #3
+    3cec:	mov	w2, #0x19                  	// #25
+    3cf0:	mov	w3, w25
+    3cf4:	ldr	x0, [x8, #352]
+    3cf8:	bl	0 <input_event>
+    3cfc:	ldr	x8, [x26]
+    3d00:	orr	w9, w25, w21
+    3d04:	cmp	w9, #0x0
+    3d08:	mov	w1, #0x1                   	// #1
+    3d0c:	cset	w3, ne	// ne = any
+    3d10:	mov	w2, #0x140                 	// #320
+    3d14:	ldr	x0, [x8, #352]
+    3d18:	bl	0 <input_event>
+    3d1c:	ldr	x8, [x26]
+    3d20:	mov	w1, #0x1                   	// #1
+    3d24:	mov	w2, #0x14b                 	// #331
+    3d28:	mov	w3, w24
+    3d2c:	ldr	x0, [x8, #352]
+    3d30:	bl	0 <input_event>
+    3d34:	ldr	x8, [x26]
+    3d38:	ubfx	w3, w28, #1, #1
+    3d3c:	mov	w1, #0x1                   	// #1
+    3d40:	mov	w2, #0x14c                 	// #332
+    3d44:	ldr	x0, [x8, #352]
+    3d48:	bl	0 <input_event>
+    3d4c:	adrp	x8, 0 <jiffies>
+    3d50:	ldr	x0, [x8]
+    3d54:	bl	0 <jiffies_to_msecs>
+    3d58:	adrp	x8, 0 <__cfi_check>
+    3d5c:	adrp	x10, 0 <__cfi_check>
+    3d60:	add	x10, x10, #0x0
+    3d64:	ldrb	w9, [x8]
+    3d68:	add	x11, x9, x9, lsl #2
+    3d6c:	lsl	x11, x11, #3
+    3d70:	add	x12, x10, x11
+    3d74:	cmp	x11, #0x4f8
+    3d78:	stp	xzr, xzr, [x12]
+    3d7c:	stp	xzr, xzr, [x12, #16]
+    3d80:	str	xzr, [x12, #32]
+    3d84:	b.hi	4100 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0xa64>  // b.pmore
+    3d88:	mov	w13, #0x28                  	// #40
+    3d8c:	cmp	x11, #0x4f6
+    3d90:	madd	x13, x9, x13, x10
+    3d94:	strh	w27, [x13, #8]
+    3d98:	b.hi	4100 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0xa64>  // b.pmore
+    3d9c:	mov	w13, #0x28                  	// #40
+    3da0:	and	w14, w22, #0xff
+    3da4:	and	w15, w23, #0xff
+    3da8:	cmp	x11, #0x4f0
+    3dac:	madd	x13, x9, x13, x10
+    3db0:	strb	w14, [x13, #10]
+    3db4:	strb	w15, [x13, #11]
+    3db8:	b.hi	4100 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0xa64>  // b.pmore
+    3dbc:	mov	w13, #0xcccd                	// #52429
+    3dc0:	mov	w14, #0x28                  	// #40
+    3dc4:	cmp	x11, #0x4e8
+    3dc8:	mul	w15, w20, w13
+    3dcc:	madd	x14, x9, x14, x10
+    3dd0:	lsr	w15, w15, #19
+    3dd4:	str	x15, [x14, #16]
+    3dd8:	b.hi	4100 <nvt_ts_work_func.f44ef385db484160e6b6775ecb8fa2ac+0xa64>  // b.pmore
+    3ddc:	mov	w14, #0x28                  	// #40
+    3de0:	mul	w13, w19, w13
+    3de4:	cmp	x11, #0x4e0
+    3de8:	madd	x14, x9, x14, x10

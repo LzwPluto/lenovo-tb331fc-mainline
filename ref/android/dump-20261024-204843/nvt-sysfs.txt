@@ -1,0 +1,6 @@
+﻿/sys/bus/spi/drivers/NVT-ts
+/sys/module/nvt36523_spi
+/sys/module/nvt36523_spi/drivers/spi:NVT-ts
+/sys/module/panel_event_notifier/holders/nvt36523_spi
+/sys/module/msm_drm/holders/nvt36523_spi
+/sys/module/nopmi_chg/holders/nvt36523_spi

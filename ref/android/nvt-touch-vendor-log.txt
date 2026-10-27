@@ -1,0 +1,28 @@
+﻿[15809.956362] [NVT-ts] nvt_panel_notifier_callback 3015: Notification type:2, early_trigger:1
+[15809.956376] [NVT-ts] nvt_panel_notifier_callback 3020: resume notification pre commit
+[15810.297941] [NVT-ts] nvt_panel_notifier_callback 3015: Notification type:2, early_trigger:0
+[15810.297957] [NVT-ts] nvt_ts_resume 2845: start
+[15810.297998] [NVT-ts] nvt_irq_enable 256: enable=1, desc->depth=0
+[15810.298002] [NVT-ts] nvt_ts_resume 2886: end
+[15810.298063] [NVT-ts] update_firmware_request 331: filename is novatek_ts_fw.bin
+[15810.298138] NVT-ts spi0.0: Direct firmware load for novatek_ts_fw.bin failed with error -2
+[15810.298144] NVT-ts spi0.0: Falling back to sysfs fallback for: novatek_ts_fw.bin
+[15810.306583] ueventd: firmware: loading 'novatek_ts_fw.bin' for '/devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a80000.spi/spi_master/spi0/spi0.0/firmware/novatek_ts_fw.bin'
+[15810.309097] ueventd: loading /devices/platform/soc/4ac0000.qcom,qupv3_0_geni_se/4a80000.spi/spi_master/spi0/spi0.0/firmware/novatek_ts_fw.bin took 2ms
+[15810.310399] [NVT-ts] nvt_get_fw_need_write_size 59: fw_need_write_size = 196608(0x30000), NVT end flag
+[15810.310494] [NVT-ts] nvt_bin_header_parser 152: cascade_2nd_header_info = 1
+[15810.310506] [NVT-ts] nvt_bin_header_parser 186: ovly_info = 0, ilm_dlm_num = 2, ovly_sec_num = 0, info_sec_num = 14, partition = 16
+[15810.341555] [NVT-ts] nvt_bootloader_reset 700: end
+[15810.359231] [NVT-ts] nvt_spi_dma_setup 688: set spi dma val finish
+[15810.359883] [NVT-ts] nvt_tx_auto_copy_mode 529: tx auto copy mode 1 enable
+[15810.524557] [NVT-ts] nvt_update_firmware 880: Update firmware success! <214034 us>
+[15810.531475] [NVT-ts] nvt_get_fw_info 869: fw_ver=0x0F, fw_type=0x01, PID=0x6072
+[15810.531541] [NVT-ts] nvt_restore_cmd_func 2088: nvt_restore_cmd_func++
+[15810.560310] [NVT-ts] nvt_cmd_store 1002: send Cmd 0xBA success, tried 0 times
+[15810.581418] [NVT-ts] nvt_edge_grid_zone_set 1198: send Cmd 0x7F 0x01 success, tried 0 times
+[15810.605687] [NVT-ts] nvt_ext_cmd_store 1047: send Cmd 0x79 0x00 success, tried 0 times
+[15810.629616] [NVT-ts] nvt_ext_cmd_store 1047: send Cmd 0x7B 0x01 success, tried 0 times
+[15810.629650] [NVT-ts] nvt_restore_cmd_func 2106: nvt_restore_cmd_func--
+[15839.130239] [NVT-ts] nvt_ts_usb_plugin_work_func 206: ++
+[15839.130251] [NVT-ts] nvt_ts_usb_plugin_work_func 208: usb_plugged_in = 1
+[15839.174719] [NVT-ts] nvt_ts_usb_plugin_work_func 228: --

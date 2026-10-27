@@ -1,0 +1,716 @@
+		qcom,rpm-smd {
+			compatible = "qcom,rpm-smd";
+			rpm-channel-name = "rpm_requests";
+			interrupts = <0x00 0xc2 0x01>;
+			power-domains = <0x1e>;
+			rpm-channel-type = <0x0f>;
+			phandle = <0x1a5>;
+
+			rpm-regulator-smpa1 {
+				compatible = "qcom,rpm-smd-regulator-resource";
+				qcom,resource-name = "rwmx";
+				qcom,resource-id = <0x00>;
+				qcom,regulator-type = <0x01>;
+				qcom,hpm-min-load = <0x186a0>;
+				status = "disabled";
+
+				regulator-s1 {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_s1";
+					qcom,set = <0x03>;
+					status = "disabled";
+				};
+			};
+
+			rpm-regulator-smpa3 {
+				compatible = "qcom,rpm-smd-regulator-resource";
+				qcom,resource-name = "rwcx";
+				qcom,resource-id = <0x00>;
+				qcom,regulator-type = <0x01>;
+				qcom,hpm-min-load = <0x186a0>;
+				status = "okay";
+
+				regulator-s3 {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_s3";
+					qcom,set = <0x03>;
+					status = "disabled";
+				};
+
+				regulator-s3-level {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_s3_level";
+					qcom,set = <0x03>;
+					regulator-min-microvolt = <0x10>;
+					regulator-max-microvolt = <0x200>;
+					qcom,use-voltage-level;
+					phandle = <0x95>;
+				};
+
+				regulator-s3-floor-level {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_s3_floor_level";
+					qcom,set = <0x03>;
+					regulator-min-microvolt = <0x10>;
+					regulator-max-microvolt = <0x200>;
+					qcom,use-voltage-floor-level;
+					qcom,always-send-voltage;
+					phandle = <0x8d>;
+				};
+
+				regulator-s3-level-ao {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_s3_level_ao";
+					qcom,set = <0x01>;
+					regulator-min-microvolt = <0x10>;
+					regulator-max-microvolt = <0x200>;
+					qcom,use-voltage-level;
+					phandle = <0x1a6>;
+				};
+
+				cx-cdev-lvl {
+					compatible = "qcom,regulator-cooling-device";
+					regulator-cdev-supply = <0x8d>;
+					regulator-levels = <0x100 0x00>;
+					#cooling-cells = <0x02>;
+					phandle = <0x1a7>;
+				};
+			};
+
+			rpm-regulator-smpa5 {
+				compatible = "qcom,rpm-smd-regulator-resource";
+				qcom,resource-name = "rwmx";
+				qcom,resource-id = <0x00>;
+				qcom,regulator-type = <0x01>;
+				qcom,hpm-min-load = <0x186a0>;
+				status = "okay";
+
+				regulator-s5 {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_s5";
+					qcom,set = <0x03>;
+					status = "disabled";
+				};
+
+				regulator-s5-level {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_s5_level";
+					qcom,set = <0x03>;
+					regulator-min-microvolt = <0x10>;
+					regulator-max-microvolt = <0x200>;
+					qcom,use-voltage-level;
+					phandle = <0x8e>;
+				};
+
+				regulator-s5-floor-level {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_s5_floor_level";
+					qcom,set = <0x03>;
+					regulator-min-microvolt = <0x10>;
+					regulator-max-microvolt = <0x200>;
+					qcom,use-voltage-floor-level;
+					qcom,always-send-voltage;
+					phandle = <0x1a8>;
+				};
+
+				regulator-s5-level-ao {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_s5_level_ao";
+					qcom,set = <0x01>;
+					regulator-min-microvolt = <0x10>;
+					regulator-max-microvolt = <0x200>;
+					qcom,use-voltage-level;
+					phandle = <0x1a9>;
+				};
+
+				mx-cdev-lvl {
+					compatible = "qcom,regulator-cooling-device";
+					regulator-cdev-supply = <0x8e>;
+					regulator-levels = <0x100 0x00>;
+					#cooling-cells = <0x02>;
+					phandle = <0x1aa>;
+				};
+			};
+
+			rpm-regulator-smpa6 {
+				compatible = "qcom,rpm-smd-regulator-resource";
+				qcom,resource-name = "smpa";
+				qcom,resource-id = <0x06>;
+				qcom,regulator-type = <0x01>;
+				qcom,hpm-min-load = <0x186a0>;
+				status = "okay";
+
+				regulator-s6 {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_s6";
+					qcom,set = <0x03>;
+					status = "okay";
+					regulator-min-microvolt = <0x61a80>;
+					regulator-max-microvolt = <0x15a6f8>;
+					qcom,init-voltage = <0x14a140>;
+					phandle = <0x117>;
+				};
+			};
+
+			rpm-regulator-smpa7 {
+				compatible = "qcom,rpm-smd-regulator-resource";
+				qcom,resource-name = "smpa";
+				qcom,resource-id = <0x07>;
+				qcom,regulator-type = <0x01>;
+				qcom,hpm-min-load = <0x186a0>;
+				status = "okay";
+
+				regulator-s7 {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_s7";
+					qcom,set = <0x03>;
+					status = "okay";
+					regulator-min-microvolt = <0x17f0e8>;
+					regulator-max-microvolt = <0x1f20c0>;
+					qcom,init-voltage = <0x1f20c0>;
+					phandle = <0x118>;
+				};
+			};
+
+			rpm-regulator-smpa8 {
+				compatible = "qcom,rpm-smd-regulator-resource";
+				qcom,resource-name = "smpa";
+				qcom,resource-id = <0x08>;
+				qcom,regulator-type = <0x01>;
+				qcom,hpm-min-load = <0x186a0>;
+				status = "okay";
+
+				regulator-s8 {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_s8";
+					qcom,set = <0x03>;
+					status = "okay";
+					regulator-min-microvolt = <0x102ca0>;
+					regulator-max-microvolt = <0x11da50>;
+					qcom,init-voltage = <0x113640>;
+					phandle = <0x1ab>;
+				};
+			};
+
+			rpm-regulator-ldoa1 {
+				compatible = "qcom,rpm-smd-regulator-resource";
+				qcom,resource-name = "ldoa";
+				qcom,resource-id = <0x01>;
+				qcom,regulator-type = <0x00>;
+				qcom,regulator-hw-type = "pmic5-ldo";
+				qcom,hpm-min-load = <0x2710>;
+				status = "okay";
+
+				regulator-l1 {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_l1";
+					qcom,set = <0x03>;
+					status = "okay";
+					regulator-min-microvolt = <0xe7ef0>;
+					regulator-max-microvolt = <0x1312d0>;
+					qcom,init-voltage = <0xf4240>;
+					phandle = <0x1ac>;
+				};
+			};
+
+			rpm-regulator-ldoa2 {
+				compatible = "qcom,rpm-smd-regulator-resource";
+				qcom,resource-name = "rwlm";
+				qcom,resource-id = <0x00>;
+				qcom,regulator-type = <0x00>;
+				qcom,regulator-hw-type = "pmic5-ldo";
+				qcom,hpm-min-load = <0x2710>;
+				status = "okay";
+
+				regulator-l2 {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_l2";
+					qcom,set = <0x03>;
+					status = "disabled";
+				};
+
+				regulator-l2-level {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_l2_level";
+					qcom,set = <0x03>;
+					regulator-min-microvolt = <0x10>;
+					regulator-max-microvolt = <0x200>;
+					qcom,use-voltage-level;
+					phandle = <0x90>;
+				};
+			};
+
+			rpm-regulator-ldoa3 {
+				compatible = "qcom,rpm-smd-regulator-resource";
+				qcom,resource-name = "rwlc";
+				qcom,resource-id = <0x00>;
+				qcom,regulator-type = <0x00>;
+				qcom,regulator-hw-type = "pmic5-ldo";
+				qcom,hpm-min-load = <0x2710>;
+				status = "okay";
+
+				regulator-l3 {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_l3";
+					qcom,set = <0x03>;
+					status = "disabled";
+				};
+
+				regulator-l3-level {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_l3_level";
+					qcom,set = <0x03>;
+					regulator-min-microvolt = <0x10>;
+					regulator-max-microvolt = <0x200>;
+					qcom,use-voltage-level;
+					phandle = <0x8f>;
+				};
+			};
+
+			rpm-regulator-ldoa4 {
+				compatible = "qcom,rpm-smd-regulator-resource";
+				qcom,resource-name = "ldoa";
+				qcom,resource-id = <0x04>;
+				qcom,regulator-type = <0x00>;
+				qcom,regulator-hw-type = "pmic5-ldo";
+				qcom,hpm-min-load = <0x2710>;
+				status = "okay";
+
+				regulator-l4 {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_l4";
+					qcom,set = <0x03>;
+					status = "okay";
+					regulator-min-microvolt = <0xafc80>;
+					regulator-max-microvolt = <0x100590>;
+					qcom,init-voltage = <0xd6d80>;
+					phandle = <0xf2>;
+				};
+			};
+
+			rpm-regulator-ldoa5 {
+				compatible = "qcom,rpm-smd-regulator-resource";
+				qcom,resource-name = "ldoa";
+				qcom,resource-id = <0x05>;
+				qcom,regulator-type = <0x00>;
+				qcom,regulator-hw-type = "pmic5-ldo";
+				qcom,hpm-min-load = <0x2710>;
+				status = "okay";
+
+				regulator-l5 {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_l5";
+					qcom,set = <0x03>;
+					status = "okay";
+					regulator-min-microvolt = <0x192d50>;
+					regulator-max-microvolt = <0x2e8a10>;
+					qcom,init-voltage = <0x2d2a80>;
+					phandle = <0x1ad>;
+				};
+			};
+
+			rpm-regulator-ldoa6 {
+				compatible = "qcom,rpm-smd-regulator-resource";
+				qcom,resource-name = "ldoa";
+				qcom,resource-id = <0x06>;
+				qcom,regulator-type = <0x00>;
+				qcom,regulator-hw-type = "pmic5-ldo";
+				qcom,hpm-min-load = <0x2710>;
+				status = "okay";
+
+				regulator-l6 {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_l6";
+					qcom,set = <0x03>;
+					status = "okay";
+					regulator-min-microvolt = <0x8b290>;
+					regulator-max-microvolt = <0x9eb10>;
+					qcom,init-voltage = <0x98580>;
+					phandle = <0x1ae>;
+				};
+			};
+
+			rpm-regulator-ldoa7 {
+				compatible = "qcom,rpm-smd-regulator-resource";
+				qcom,resource-name = "ldoa";
+				qcom,resource-id = <0x07>;
+				qcom,regulator-type = <0x00>;
+				qcom,regulator-hw-type = "pmic5-ldo";
+				qcom,hpm-min-load = <0x2710>;
+				status = "okay";
+
+				regulator-l7 {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_l7";
+					qcom,set = <0x03>;
+					status = "okay";
+					regulator-min-microvolt = <0x124f80>;
+					regulator-max-microvolt = <0x13d620>;
+					qcom,init-voltage = <0x132a40>;
+					phandle = <0x1af>;
+				};
+			};
+
+			rpm-regulator-ldoa8 {
+				compatible = "qcom,rpm-smd-regulator-resource";
+				qcom,resource-name = "ldoa";
+				qcom,resource-id = <0x08>;
+				qcom,regulator-type = <0x00>;
+				qcom,regulator-hw-type = "pmic5-ldo";
+				qcom,hpm-min-load = <0x2710>;
+				status = "okay";
+
+				regulator-l8 {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_l8";
+					qcom,set = <0x03>;
+					status = "okay";
+					regulator-min-microvolt = <0x61a80>;
+					regulator-max-microvolt = <0xb1bc0>;
+					qcom,init-voltage = <0xabe00>;
+					phandle = <0x1b0>;
+				};
+			};
+
+			rpm-regulator-ldoa9 {
+				compatible = "qcom,rpm-smd-regulator-resource";
+				qcom,resource-name = "ldoa";
+				qcom,resource-id = <0x09>;
+				qcom,regulator-type = <0x00>;
+				qcom,regulator-hw-type = "pmic5-ldo";
+				qcom,hpm-min-load = <0x2710>;
+				status = "okay";
+
+				regulator-l9 {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_l9";
+					qcom,set = <0x03>;
+					status = "okay";
+					regulator-min-microvolt = <0x16f300>;
+					regulator-max-microvolt = <0x1e8480>;
+					qcom,init-voltage = <0x1b7740>;
+					phandle = <0x83>;
+				};
+			};
+
+			rpm-regulator-ldoa10 {
+				compatible = "qcom,rpm-smd-regulator-resource";
+				qcom,resource-name = "ldoa";
+				qcom,resource-id = <0x0a>;
+				qcom,regulator-type = <0x00>;
+				qcom,regulator-hw-type = "pmic5-ldo";
+				qcom,hpm-min-load = <0x2710>;
+				status = "okay";
+
+				regulator-l10 {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_l10";
+					qcom,set = <0x03>;
+					status = "okay";
+					regulator-min-microvolt = <0x19f0a0>;
+					regulator-max-microvolt = <0x1cfde0>;
+					qcom,init-voltage = <0x1b7740>;
+					phandle = <0x1b1>;
+				};
+			};
+
+			rpm-regulator-ldoa11 {
+				compatible = "qcom,rpm-smd-regulator-resource";
+				qcom,resource-name = "ldoa";
+				qcom,resource-id = <0x0b>;
+				qcom,regulator-type = <0x00>;
+				qcom,regulator-hw-type = "pmic5-ldo";
+				qcom,hpm-min-load = <0x2710>;
+				status = "okay";
+
+				regulator-l11 {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_l11";
+					qcom,set = <0x03>;
+					status = "okay";
+					regulator-min-microvolt = <0x19f0a0>;
+					regulator-max-microvolt = <0x1dc130>;
+					qcom,init-voltage = <0x1b7740>;
+					phandle = <0x1b2>;
+				};
+			};
+
+			rpm-regulator-ldoa12 {
+				compatible = "qcom,rpm-smd-regulator-resource";
+				qcom,resource-name = "ldoa";
+				qcom,resource-id = <0x0c>;
+				qcom,regulator-type = <0x00>;
+				qcom,regulator-hw-type = "pmic5-ldo";
+				qcom,hpm-min-load = <0x2710>;
+				status = "okay";
+
+				regulator-l12 {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_l12";
+					qcom,set = <0x03>;
+					status = "okay";
+					regulator-min-microvolt = <0x18b820>;
+					regulator-max-microvolt = <0x1e3660>;
+					qcom,init-voltage = <0x1b7740>;
+					phandle = <0xf3>;
+				};
+			};
+
+			rpm-regulator-ldoa13 {
+				compatible = "qcom,rpm-smd-regulator-resource";
+				qcom,resource-name = "ldoa";
+				qcom,resource-id = <0x0d>;
+				qcom,regulator-type = <0x00>;
+				qcom,regulator-hw-type = "pmic5-ldo";
+				qcom,hpm-min-load = <0x2710>;
+				status = "okay";
+
+				regulator-l13 {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_l13";
+					qcom,set = <0x03>;
+					status = "okay";
+					regulator-min-microvolt = <0x16f300>;
+					regulator-max-microvolt = <0x1e8480>;
+					qcom,init-voltage = <0x1b7740>;
+					phandle = <0x1b3>;
+				};
+			};
+
+			rpm-regulator-ldoa14 {
+				compatible = "qcom,rpm-smd-regulator-resource";
+				qcom,resource-name = "ldoa";
+				qcom,resource-id = <0x0e>;
+				qcom,regulator-type = <0x00>;
+				qcom,regulator-hw-type = "pmic5-ldo";
+				qcom,hpm-min-load = <0x2710>;
+				status = "okay";
+
+				regulator-l14 {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_l14";
+					qcom,set = <0x03>;
+					status = "okay";
+					regulator-min-microvolt = <0x19f0a0>;
+					regulator-max-microvolt = <0x1cfde0>;
+					qcom,init-voltage = <0x19f0a0>;
+					phandle = <0x1b4>;
+				};
+			};
+
+			rpm-regulator-ldoa15 {
+				compatible = "qcom,rpm-smd-regulator-resource";
+				qcom,resource-name = "ldoa";
+				qcom,resource-id = <0x0f>;
+				qcom,regulator-type = <0x00>;
+				qcom,regulator-hw-type = "pmic5-ldo";
+				qcom,hpm-min-load = <0x2710>;
+				status = "okay";
+
+				regulator-l15 {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_l15";
+					qcom,set = <0x03>;
+					status = "okay";
+					regulator-min-microvolt = <0x2932e0>;
+					regulator-max-microvolt = <0x3613c0>;
+					qcom,init-voltage = <0x2eff40>;
+					phandle = <0xf4>;
+				};
+			};
+
+			rpm-regulator-ldoa16 {
+				compatible = "qcom,rpm-smd-regulator-resource";
+				qcom,resource-name = "ldoa";
+				qcom,resource-id = <0x10>;
+				qcom,regulator-type = <0x00>;
+				qcom,regulator-hw-type = "pmic5-ldo";
+				qcom,hpm-min-load = <0x2710>;
+				status = "okay";
+
+				regulator-l16 {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_l16";
+					qcom,set = <0x03>;
+					status = "okay";
+					regulator-min-microvolt = <0x19f0a0>;
+					regulator-max-microvolt = <0x1cfde0>;
+					qcom,init-voltage = <0x19f0a0>;
+					phandle = <0x86>;
+				};
+			};
+
+			rpm-regulator-ldoa17 {
+				compatible = "qcom,rpm-smd-regulator-resource";
+				qcom,resource-name = "ldoa";
+				qcom,resource-id = <0x11>;
+				qcom,regulator-type = <0x00>;
+				qcom,regulator-hw-type = "pmic5-ldo";
+				qcom,hpm-min-load = <0x2710>;
+				status = "okay";
+
+				regulator-l17 {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_l17";
+					qcom,set = <0x03>;
+					status = "okay";
+					regulator-min-microvolt = <0x129da0>;
+					regulator-max-microvolt = <0x13e5c0>;
+					qcom,init-voltage = <0x129da0>;
+					phandle = <0x84>;
+				};
+			};
+
+			rpm-regulator-ldoa18 {
+				compatible = "qcom,rpm-smd-regulator-resource";
+				qcom,resource-name = "ldoa";
+				qcom,resource-id = <0x12>;
+				qcom,regulator-type = <0x00>;
+				qcom,regulator-hw-type = "pmic5-ldo";
+				qcom,hpm-min-load = <0x2710>;
+				status = "okay";
+
+				regulator-l18 {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_l18";
+					qcom,set = <0x03>;
+					status = "okay";
+					regulator-min-microvolt = <0x10c8e0>;
+					regulator-max-microvolt = <0x13d620>;
+					qcom,init-voltage = <0x12cc80>;
+					phandle = <0xf5>;
+				};
+			};
+
+			rpm-regulator-ldoa19 {
+				compatible = "qcom,rpm-smd-regulator-resource";
+				qcom,resource-name = "ldoa";
+				qcom,resource-id = <0x13>;
+				qcom,regulator-type = <0x00>;
+				qcom,regulator-hw-type = "pmic5-ldo";
+				qcom,hpm-min-load = <0x2710>;
+				status = "okay";
+
+				regulator-l19 {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_l19";
+					qcom,set = <0x03>;
+					status = "okay";
+					regulator-min-microvolt = <0x18b820>;
+					regulator-max-microvolt = <0x325aa0>;
+					qcom,init-voltage = <0x18b820>;
+					phandle = <0x1b5>;
+				};
+			};
+
+			rpm-regulator-ldoa20 {
+				compatible = "qcom,rpm-smd-regulator-resource";
+				qcom,resource-name = "ldoa";
+				qcom,resource-id = <0x14>;
+				qcom,regulator-type = <0x00>;
+				qcom,regulator-hw-type = "pmic5-ldo";
+				qcom,hpm-min-load = <0x2710>;
+				status = "okay";
+
+				regulator-l20 {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_l20";
+					qcom,set = <0x03>;
+					status = "okay";
+					regulator-min-microvolt = <0x18b820>;
+					regulator-max-microvolt = <0x325aa0>;
+					qcom,init-voltage = <0x18b820>;
+					phandle = <0x1b6>;
+				};
+			};
+
+			rpm-regulator-ldoa21 {
+				compatible = "qcom,rpm-smd-regulator-resource";
+				qcom,resource-name = "ldoa";
+				qcom,resource-id = <0x15>;
+				qcom,regulator-type = <0x00>;
+				qcom,regulator-hw-type = "pmic5-ldo";
+				qcom,hpm-min-load = <0x2710>;
+				status = "okay";
+
+				regulator-l21 {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_l21";
+					qcom,set = <0x03>;
+					status = "okay";
+					regulator-min-microvolt = <0x186a00>;
+					regulator-max-microvolt = <0x3613c0>;
+					qcom,init-voltage = <0x186a00>;
+					phandle = <0x1b7>;
+				};
+			};
+
+			rpm-regulator-ldoa22 {
+				compatible = "qcom,rpm-smd-regulator-resource";
+				qcom,resource-name = "ldoa";
+				qcom,resource-id = <0x16>;
+				qcom,regulator-type = <0x00>;
+				qcom,regulator-hw-type = "pmic5-ldo";
+				qcom,hpm-min-load = <0x2710>;
+				status = "okay";
+
+				regulator-l22 {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_l22";
+					qcom,set = <0x03>;
+					status = "okay";
+					regulator-min-microvolt = <0x2d0370>;
+					regulator-max-microvolt = <0x325aa0>;
+					qcom,init-voltage = <0x2d2a80>;
+					phandle = <0x1b8>;
+				};
+			};
+
+			rpm-regulator-ldoa23 {
+				compatible = "qcom,rpm-smd-regulator-resource";
+				qcom,resource-name = "ldoa";
+				qcom,resource-id = <0x17>;
+				qcom,regulator-type = <0x00>;
+				qcom,regulator-hw-type = "pmic5-ldo";
+				qcom,hpm-min-load = <0x2710>;
+				status = "okay";
+
+				regulator-l23 {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_l23";
+					qcom,set = <0x03>;
+					status = "okay";
+					regulator-min-microvolt = <0x30d400>;
+					regulator-max-microvolt = <0x33e140>;
+					qcom,init-voltage = <0x30d400>;
+					phandle = <0x85>;
+				};
+			};
+
+			rpm-regulator-ldoa24 {
+				compatible = "qcom,rpm-smd-regulator-resource";
+				qcom,resource-name = "ldoa";
+				qcom,resource-id = <0x18>;
+				qcom,regulator-type = <0x00>;
+				qcom,regulator-hw-type = "pmic5-ldo";
+				qcom,hpm-min-load = <0x2710>;
+				status = "okay";
+
+				regulator-l24 {
+					compatible = "qcom,rpm-smd-regulator";
+					regulator-name = "pm6125_l24";
+					qcom,set = <0x03>;
+					status = "okay";
+					regulator-min-microvolt = <0x2932e0>;
+					regulator-max-microvolt = <0x3613c0>;
+					qcom,init-voltage = <0x2d2a80>;
+					phandle = <0x1b9>;
+				};
+			};
+
+			rpm-smd-cdev {
+				compatible = "qcom,rpm-smd-cooling-device";
+				#cooling-cells = <0x02>;
+				phandle = <0x1ba>;
+			};
+		};

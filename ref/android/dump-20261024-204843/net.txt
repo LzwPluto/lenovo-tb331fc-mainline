@@ -1,0 +1,17 @@
+﻿total 0
+lrwxrwxrwx 1 root root 0 1970-01-01 08:01 dummy0 -> ../../devices/virtual/net/dummy0
+lrwxrwxrwx 1 root root 0 1970-01-01 08:01 erspan0 -> ../../devices/virtual/net/erspan0
+lrwxrwxrwx 1 root root 0 1970-01-01 08:01 gre0 -> ../../devices/virtual/net/gre0
+lrwxrwxrwx 1 root root 0 1970-01-01 08:01 gretap0 -> ../../devices/virtual/net/gretap0
+lrwxrwxrwx 1 root root 0 1970-01-01 08:01 ifb0 -> ../../devices/virtual/net/ifb0
+lrwxrwxrwx 1 root root 0 1970-01-01 08:01 ifb1 -> ../../devices/virtual/net/ifb1
+lrwxrwxrwx 1 root root 0 1970-01-01 08:01 ip6_vti0 -> ../../devices/virtual/net/ip6_vti0
+lrwxrwxrwx 1 root root 0 1970-01-01 08:01 ip6gre0 -> ../../devices/virtual/net/ip6gre0
+lrwxrwxrwx 1 root root 0 1970-01-01 08:01 ip6tnl0 -> ../../devices/virtual/net/ip6tnl0
+lrwxrwxrwx 1 root root 0 1970-01-01 08:01 ip_vti0 -> ../../devices/virtual/net/ip_vti0
+lrwxrwxrwx 1 root root 0 1970-01-01 08:01 lo -> ../../devices/virtual/net/lo
+lrwxrwxrwx 1 root root 0 2026-10-24 10:03 p2p0 -> ../../devices/platform/soc/c800000.qcom,icnss/net/p2p0
+lrwxrwxrwx 1 root root 0 1970-01-01 08:01 sit0 -> ../../devices/virtual/net/sit0
+lrwxrwxrwx 1 root root 0 1970-01-01 08:01 tunl0 -> ../../devices/virtual/net/tunl0
+lrwxrwxrwx 1 root root 0 2026-10-24 10:03 wifi-aware0 -> ../../devices/platform/soc/c800000.qcom,icnss/net/wifi-aware0
+lrwxrwxrwx 1 root root 0 2026-10-24 10:03 wlan0 -> ../../devices/platform/soc/c800000.qcom,icnss/net/wlan0

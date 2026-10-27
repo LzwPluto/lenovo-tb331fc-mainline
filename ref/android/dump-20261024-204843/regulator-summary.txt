@@ -1,0 +1,125 @@
+﻿ regulator                      use open bypass  opmode voltage current     min     max
+---------------------------------------------------------------------------------------
+ regulator-dummy                  3    4      0 unknown     0mV     0mA     0mV     0mV 
+    5e94400.qcom,mdss_dsi_phy0-gdsc   1                                 0mA     0mV     0mV
+    6080000.remoteproc-mss-vdd_cx   0                                 0mA     0mV     0mV
+    b300000.remoteproc-cdsp-vdd_cx   0                                 0mA     0mV     0mV
+    soc:usb_nop_phy-vcc           1                                 0mA     0mV     0mV
+ pm6125_s3_level                  5    5      0    idle     0mV     0mA     0mV     0mV 
+    5f00000.clock-controller-vdd_cx   1                                 0mA     0mV     0mV
+    5990000.clock-controller-vdd_cx   1                                 0mA     0mV     0mV
+    1400000.clock-controller-vdd_cx   1                                 0mA     0mV     0mV
+    gpu_cx_gdsc                   1    3      0  normal     0mV     0mA     0mV     0mV 
+       5900000.qcom,kgsl-3d0-vddcx   1                                 0mA     0mV     0mV
+       59a0000.qcom,kgsl-iommu-vddcx   0                                 0mA     0mV     0mV
+       59a0000.kgsl-smmu-vdd      0                                 0mA     0mV     0mV
+    gpu_gx_gdsc                   1    1      0  normal     0mV     0mA     0mV     0mV 
+       5900000.qcom,kgsl-3d0-vdd   1                                 0mA     0mV     0mV
+ pm6125_s3_floor_level            0    1      0    idle     0mV     0mA     0mV     0mV 
+    soc:qcom,rpm-smd:rpm-regulator-smpa3:cx-cdev-lvl-regulator-cdev   0                                 0mA     0mV     0mV
+ pm6125_s3_level_ao               0    0      0    idle     0mV     0mA     0mV     0mV 
+ pm6125_s5_level                  1    3      0    idle     0mV     0mA     0mV     0mV 
+    soc:qcom,rpm-smd:rpm-regulator-smpa5:mx-cdev-lvl-regulator-cdev   0                                 0mA     0mV     0mV
+    5990000.clock-controller-vdd_mx   1                                 0mA     0mV     0mV
+    1400000.clock-controller-vdd_mx   0                                 0mA     0mV     0mV
+ pm6125_s5_floor_level            0    0      0    idle     0mV     0mA     0mV     0mV 
+ pm6125_s5_level_ao               0    0      0    idle     0mV     0mA     0mV     0mV 
+ pm6125_s6                        0    0      0    idle  1352mV     0mA   400mV  1419mV 
+ pm6125_s7                        0    0      0    idle  2040mV     0mA  1569mV  2040mV 
+ pm6125_s8                        0    0      0    idle  1128mV     0mA  1060mV  1170mV 
+ pm6125_l1                        0    0      0    idle   950mV     0mA   950mV  1250mV 
+ pm6125_l2_level                  0    1      0    idle     0mV     0mA     0mV     0mV 
+    ab00000.remoteproc-adsp-mx    0                                 0mA     0mV     0mV
+ pm6125_l3_level                  0    1      0    idle     0mV     0mA     0mV     0mV 
+    ab00000.remoteproc-adsp-cx    0                                 0mA     0mV     0mV
+ pm6125_l4                        3    6      0  normal   880mV     0mA   720mV  1050mV 
+    5e94400.qcom,mdss_dsi_phy0-vdda-0p9   1                                36mA   880mV   880mV
+    5c56000.qcom,csiphy2-mipi-csi-vdd1   0                                 0mA     0mV     0mV
+    5c54000.qcom,csiphy1-mipi-csi-vdd1   0                                 0mA     0mV     0mV
+    5c52000.qcom,csiphy0-mipi-csi-vdd1   0                                 0mA     0mV     0mV
+    1613000.hsphy-vdd             1                                30mA   880mV   880mV
+    4807000.ufsphy_mem-vdda-phy   1                                85mA   880mV   925mV
+ pm6125_l5                        0    1      0    idle  1650mV     0mA  1650mV  3050mV 
+    4784000.sdhci-vdd-io          0                                 0mA  1650mV  2960mV
+ pm6125_l6                        0    0      0    idle   624mV     0mA   570mV   650mV 
+ pm6125_l7                        0    0      0    idle  1256mV     0mA  1200mV  1300mV 
+ pm6125_l8                        1    1      0    idle   640mV     0mA   400mV   728mV 
+    c800000.qcom,icnss-vdd-cx-mx   1                                 0mA   640mV   640mV
+ pm6125_l9                        5    5      0  normal  1800mV     0mA  1504mV  2000mV 
+    wcd937x-codec-cdc-vddpx       1                                20mA  1800mV  1800mV
+    wcd937x-codec-cdc-vdd-rxtx    1                                10mA  1800mV  1800mV
+    soc:qcom,dsi-display-primary-vddio   1                                62mA  1800mV  1800mV
+    0-0028-qcom,sn-vdd-1p8        1                               157mA  1800mV  2000mV
+    soc:bt_wcn3990-qcom,bt-vdd-io   1                                 0mA  1700mV  1900mV
+ pm6125_l10                       0    0      0    idle  1800mV     0mA  1700mV  1900mV 
+ pm6125_l11                       1    1      0  normal  1800mV     0mA  1700mV  1950mV 
+    4804000.ufshc-vccq2           1                               800mA     0mV     0mV
+ pm6125_l12                       1    1      0  normal  1704mV     0mA  1620mV  1980mV 
+    1613000.hsphy-vdda18          1                                19mA  1704mV  1800mV
+ pm6125_l13                       0    0      0    idle  1800mV     0mA  1504mV  2000mV 
+ pm6125_l14                       0    1      0    idle  1800mV     0mA  1700mV  1900mV 
+    wcd937x-codec-cdc-vdd-buck    0                               650mA* 1800mV  1800mV
+ pm6125_l15                       1    1      0  normal  3050mV     0mA  2700mV  3544mV 
+    1613000.hsphy-vdda33          1                                16mA  3050mV  3300mV
+ pm6125_l16                       2    2      0    idle  1800mV     0mA  1700mV  1900mV 
+    c800000.qcom,icnss-vdd-1.8-xo   1                                 0mA  1800mV  1800mV
+    soc:bt_wcn3990-qcom,bt-vdd-xtal   1                                 0mA  1700mV  1900mV
+ pm6125_l17                       2    2      0    idle  1304mV     0mA  1220mV  1304mV 
+    c800000.qcom,icnss-vdd-1.3-rfa   1                                 0mA  1304mV  1304mV
+    soc:bt_wcn3990-qcom,bt-vdd-core   1                                 0mA  1304mV  1304mV
+ pm6125_l18                       3    6      0  normal  1200mV     0mA  1100mV  1300mV 
+    5e94000.qcom,mdss_dsi_ctrl0-vdda-1p2   1                                21mA  1200mV  1200mV
+    5c56000.qcom,csiphy2-mipi-csi-vdd2   0                                 0mA     0mV     0mV
+    5c54000.qcom,csiphy1-mipi-csi-vdd2   0                                 0mA     0mV     0mV
+    5c52000.qcom,csiphy0-mipi-csi-vdd2   0                                 0mA     0mV     0mV
+    4807000.ufsphy_mem-vdda-pll   1                                18mA  1200mV  1300mV
+    4804000.ufshc-qcom,vddp-ref-clk   1                                 0mA  1200mV  1200mV
+ pm6125_l19                       0    0      0    idle  1620mV     0mA  1620mV  3300mV 
+ pm6125_l20                       0    0      0    idle  1620mV     0mA  1620mV  3300mV 
+ pm6125_l21                       0    0      0    idle  1600mV     0mA  1600mV  3544mV 
+ pm6125_l22                       0    1      0    idle  2950mV     0mA  2950mV  3300mV 
+    4784000.sdhci-vdd             0                                 0mA  2950mV  2960mV
+ pm6125_l23                       2    2      0    idle  3200mV     0mA  3200mV  3400mV 
+    c800000.qcom,icnss-vdd-3.3-ch0   1                                 0mA  3200mV  3312mV
+    soc:bt_wcn3990-qcom,bt-vdd-pa   1                                 0mA  3200mV  3312mV
+ pm6125_l24                       1    1      0  normal  2960mV     0mA  2700mV  3544mV 
+    4804000.ufshc-vcc             1                               800mA     0mV     0mV
+ gcc_camss_top_gdsc               0   16      0  normal     0mV     0mA     0mV     0mV 
+    5c42000.qcom,ope-camss        0                                 0mA     0mV     0mV
+    5c56000.qcom,csiphy2-gdscr    0                                 0mA     0mV     0mV
+    5c54000.qcom,csiphy1-gdscr    0                                 0mA     0mV     0mV
+    5c52000.qcom,csiphy0-gdscr    0                                 0mA     0mV     0mV
+    5c1b000.qcom,cci0-gdscr       0                                 0mA     0mV     0mV
+    5c68000.qcom,tpg0-camss       0                                 0mA     0mV     0mV
+    5c66000.qcom,tpg0-camss       0                                 0mA     0mV     0mV
+    5c7c000.qcom,tfe_csid2-camss   0                                 0mA     0mV     0mV
+    5c75000.qcom,tfe_csid1-camss   0                                 0mA     0mV     0mV
+    5c6e000.qcom,tfe_csid0-camss   0                                 0mA     0mV     0mV
+    5c7c000.qcom,tfe2-camss       0                                 0mA     0mV     0mV
+    5c75000.qcom,tfe1-camss       0                                 0mA     0mV     0mV
+    5c6e000.qcom,tfe0-camss       0                                 0mA     0mV     0mV
+    5c42000.qcom,ope-cdm0-camss   0                                 0mA     0mV     0mV
+    5c23000.qcom,cpas-cdm0-camss   0                                 0mA     0mV     0mV
+    5c11000.qcom,cam-cpas-camss-vdd   0                                 0mA     0mV     0mV
+ gcc_ufs_phy_gdsc                 1    1      0  normal     0mV     0mA     0mV     0mV 
+    4804000.ufshc-vdd-hba         1                                 0mA     0mV     0mV
+ gcc_usb30_prim_gdsc              1    1      0  normal     0mV     0mA     0mV     0mV 
+    4e00000.ssusb-USB3_GDSC       1                                 0mA     0mV     0mV
+ gcc_vcodec0_gdsc                 0    1      0  normal     0mV     0mA     0mV     0mV 
+    5a00000.qcom,vidc-venus-core0   0                                 0mA     0mV     0mV
+ gcc_venus_gdsc                   0    1      0  normal     0mV     0mA     0mV     0mV 
+    5a00000.qcom,vidc-venus       0                                 0mA     0mV     0mV
+ hlos1_vote_turing_mmu_tbu1_gdsc   0    0      0  normal     0mV     0mA     0mV     0mV 
+ hlos1_vote_turing_mmu_tbu0_gdsc   0    1      0  normal     0mV     0mA     0mV     0mV 
+    c791000.cdsp_tbu-vdd          0                                 0mA     0mV     0mV
+ hlos1_vote_mm_snoc_mmu_tbu_rt_gdsc   0    1      0  normal     0mV     0mA     0mV     0mV 
+    c789000.mm_rt_tbu-vdd         0                                 0mA     0mV     0mV
+ hlos1_vote_mm_snoc_mmu_tbu_nrt_gdsc   0    1      0  normal     0mV     0mA     0mV     0mV 
+    c78d000.mm_nrt_tbu-vdd        0                                 0mA     0mV     0mV
+ mdss_core_gdsc                   1    1      0  normal     0mV     0mA     0mV     0mV 
+    5e00000.qcom,mdss_mdp-sde-vdd   1                                 0mA     0mV     0mV
+ refgen                           1    1      0 unknown     0mV     0mA     0mV     0mV 
+    5e94000.qcom,mdss_dsi_ctrl0-refgen   1                                 0mA     0mV     0mV
+ hsphy@1613000                    0    2      0 unknown     0mV     0mA     0mV     0mV 
+    4e00000.ssusb-dpdm            0                                 0mA     0mV     0mV
+    1-006b-dpdm                   0                                 0mA     0mV     0mV

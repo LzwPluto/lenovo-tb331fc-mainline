@@ -1,0 +1,29 @@
+﻿/vendor/bt_firmware:
+total 16
+dr-xr-x--- 2 bluetooth net_bt 16384 2011-07-06 01:30 image
+
+/vendor/bt_firmware/image:
+total 944
+-r--r----- 1 bluetooth net_bt  56052 2024-09-07 07:58 apbtfw10.tlv
+-r--r----- 1 bluetooth net_bt 226988 2024-09-07 07:58 apbtfw11.tlv
+-r--r----- 1 bluetooth net_bt   1243 2024-09-07 07:58 apnv10.bin
+-r--r----- 1 bluetooth net_bt   4891 2024-09-07 07:58 apnv11.bin
+-r--r----- 1 bluetooth net_bt   4891 2024-09-07 07:58 apnv11s.bin
+-r--r----- 1 bluetooth net_bt   4803 2024-09-07 07:58 cmbtfw10.tlv
+-r--r----- 1 bluetooth net_bt  14247 2024-09-07 07:58 cmbtfw11.tlv
+-r--r----- 1 bluetooth net_bt  47307 2024-09-07 07:58 cmbtfw12.tlv
+-r--r----- 1 bluetooth net_bt     33 2024-09-07 07:58 cmbtfw12.ver
+-r--r----- 1 bluetooth net_bt  20011 2024-09-07 07:58 cmbtfw13.tlv
+-r--r----- 1 bluetooth net_bt     33 2024-09-07 07:58 cmbtfw13.ver
+-r--r----- 1 bluetooth net_bt   2034 2024-09-07 07:58 cmnv10.bin
+-r--r----- 1 bluetooth net_bt   2676 2024-09-07 07:58 cmnv11.bin
+-r--r----- 1 bluetooth net_bt   2690 2024-09-07 07:58 cmnv12.bin
+-r--r----- 1 bluetooth net_bt   1641 2024-09-07 07:58 cmnv13.bin
+-r--r----- 1 bluetooth net_bt   1641 2024-09-07 07:58 cmnv13s.bin
+-r--r----- 1 bluetooth net_bt   1641 2024-09-07 07:58 cmnv13t.bin
+-r--r----- 1 bluetooth net_bt  29368 2024-09-07 07:58 crbtfw11.tlv
+-r--r----- 1 bluetooth net_bt  56180 2024-09-07 07:58 crbtfw20.tlv
+-r--r----- 1 bluetooth net_bt 226988 2024-09-07 07:58 crbtfw21.tlv
+-r--r----- 1 bluetooth net_bt   2798 2024-09-07 07:58 crnv11.bin
+-r--r----- 1 bluetooth net_bt   3936 2024-09-07 07:58 crnv20.bin
+-r--r----- 1 bluetooth net_bt   4837 2024-09-07 07:58 crnv21.bin
