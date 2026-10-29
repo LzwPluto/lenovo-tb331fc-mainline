@@ -35,7 +35,7 @@ if ($seen -match 'login:') {
     $sp.Write("root`r`n")
     $p = Read-Until 'Password:|#' 4000
     if ($p -match 'Password:') {
-        $sp.Write("`r`n")
+        $sp.Write("123456`r`n")
         $seen = Read-Until '#\s*$' 8000
     } else {
         $seen = $p

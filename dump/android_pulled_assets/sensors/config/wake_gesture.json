@@ -1,0 +1,13 @@
+{
+  "config":
+  {
+    "hw_platform": ["IDP"],
+    "soc_id": ["518"]
+  },
+  "sns_wake_gesture":{
+    "owner": "sns_wake_gesture",
+    "require_rate":{"ver": "0", "type": "flt",
+     "data": "25.0"
+    }
+  }
+}

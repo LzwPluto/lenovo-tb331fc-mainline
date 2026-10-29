@@ -59,10 +59,10 @@ chk = open(out_path, 'rb').read()
 assert chk[:8] == b'VNDRBOOT'
 assert struct.unpack_from('<I', chk, 0x834)[0] == len(dtb)
 assert chk[dtb_off:dtb_off + 4] == FDT
-assert struct.unpack_from('<I', chk, dtb_off + 4)[0] == len(dtb), 'FDT totalsize != header'
+assert struct.unpack_from('>I', chk, dtb_off + 4)[0] == len(dtb), 'FDT totalsize != header'
 tbl = ((dtb_off + len(dtb) + page - 1) // page) * page
 print(f'table now at 0x{tbl:x}: size={struct.unpack_from("<I", chk, tbl)[0]} '
       f'offset={struct.unpack_from("<I", chk, tbl+4)[0]} '
       f'type={struct.unpack_from("<I", chk, tbl+8)[0]}')
-assert struct.unpack_from('<I', chk, tbl)[0] == vr_size, 'table size field mismatch'
+assert struct.unpack_from('<I', chk, tbl)[0] == struct.unpack_from('<I', tail, 0)[0], 'table size field mismatch'
 print('sanity OK')

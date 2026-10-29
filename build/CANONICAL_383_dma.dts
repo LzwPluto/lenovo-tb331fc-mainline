@@ -1827,6 +1827,7 @@
 					current-num-sinks = <0x06>;
 					kinetic,current-ramp-delay-ms = <0x80>;
 					kinetic,led-enable-ramp-delay-ms = <0x01>;
+					phandle = <0x228>;
 				};
 
 
@@ -1998,6 +1999,7 @@
 					vddrf-supply = <0xa8>;
 					vddch0-supply = <0xa9>;
 					max-speed = <0x30d400>;
+					swctrl-gpios = <0x28 0x57 0x00>;
 				};
 			};
 
@@ -2430,6 +2432,7 @@ opp-table {
 					rotation = <0xb4>;
 					enable-gpios = <0x28 0x52 0x00>;
 					pp1800-supply = <0x4c>;
+					backlight = <0x228>;
 					phandle = <0x4d>;
 
 					port {

@@ -1,0 +1,255 @@
+09-16 22:27:32.253 E/qcc-vendor( 1732): optout_monitor: failed to read event. err:4
+09-16 22:27:32.253 D/qcc-vendor( 1732): sig_handle:calling clientMgr list_lock
+09-16 22:27:32.253 D/qcc-vendor( 1732): sig_handle:clientMgr list_lock acquired
+09-16 22:27:32.253 D/qcc-vendor( 1732): sig_handle:calling clientMgr list_unlock
+09-16 22:27:32.253 D/qcc-vendor( 1732): sig_handle:clientMgr list_unlocked
+09-16 22:27:32.255 D/qcc-vendor( 1732): optout_handle:calling clientMgr list_lock
+09-16 22:27:32.255 D/qcc-vendor( 1732): optout_handle:clientMgr list_lock acquired
+09-16 22:27:32.255 I/qcc-vendor( 1732): deregisterQCCClientWithoutLock: called
+09-16 22:27:32.255 D/qcc-vendor( 1732): spc_manager: Remove called with token - 57827375
+09-16 22:27:32.255 D/qcc-vendor( 1732): get_collector_info:calling clientMgr list_lock
+09-16 22:27:32.256 I/qcc-vendor( 1732): 1504 Terminated
+09-16 22:27:32.256 V/QCCEventLogger( 1732): Logging from Module qti.qcc.vendor, eventId OptoutEvent, type 4, payloadSize 5
+09-16 22:27:32.256 I/qcc-vendor( 1732): ClientMgr: enabled(0), terminated(1), thread_stop(0), thread_created(1) 
+09-16 22:27:32.256 E/qcc-vendor( 1732): cinfo->exit_handler is NULL
+09-16 22:27:32.256 I/qcc-vendor( 1732): 1503 Terminated
+09-16 22:27:32.256 V/QCCEventLogger( 1732): Logging from Module qti.qcc.vendor, eventId OptoutEvent, type 4, payloadSize 5
+09-16 22:27:32.257 I/qcc-vendor( 1732): 991063477 Terminated
+09-16 22:27:32.257 V/QCCEventLogger( 1732): Logging from Module qti.qcc.vendor, eventId OptoutEvent, type 4, payloadSize 8
+09-16 22:27:32.257 I/qcc-vendor( 1732): 313193383 Terminated
+09-16 22:27:32.257 V/QCCEventLogger( 1732): Logging from Module qti.qcc.vendor, eventId OptoutEvent, type 4, payloadSize 10
+09-16 22:27:32.257 I/qcc-vendor( 1732): 1501 Terminated
+09-16 22:27:32.257 V/QCCEventLogger( 1732): Logging from Module qti.qcc.vendor, eventId OptoutEvent, type 4, payloadSize 5
+09-16 22:27:32.257 D/qcc-vendor( 1732): optout_handle:calling clientMgr list_unlock
+09-16 22:27:32.257 I/qcc-vendor( 1732): ClientMgr: enabled(0), terminated(1), thread_stop(0), thread_created(1) 
+09-16 22:27:32.257 E/qcc-vendor( 1732): cinfo->exit_handler is NULL
+09-16 22:27:32.257 D/qcc-vendor( 1732): optout_handle:clientMgr list_unlocked
+09-16 22:27:32.257 I/qcc-vendor( 1732): Calling reboot mutex lock
+09-16 22:27:32.257 D/qcc-vendor( 1732): optout_error_handle:calling clientMgr list_lock
+09-16 22:27:32.257 D/qcc-vendor( 1732): optout_error_handle:clientMgr list_lock acquired
+09-16 22:27:32.257 D/qcc-vendor( 1732): optout_error_handle:calling clientMgr list_unlock
+09-16 22:27:32.257 D/qcc-vendor( 1732): optout_error_handle:clientMgr list_unlocked
+09-16 22:27:32.257 I/qcc-vendor( 1732): Calling reboot mutex unlock
+09-16 22:27:32.257 E/qcc-vendor( 1732): optout_error_handle: calling pthread_kill on cmgr thread 727f813cb0 with signo 2
+09-16 22:27:32.257 D/qcc-vendor( 1732): stats_wait_file_updates:Coming out of poll 1
+09-16 22:27:32.257 D/qcc-vendor( 1732): sig_handle:calling clientMgr list_lock
+09-16 22:27:32.257 D/qcc-vendor( 1732): sig_handle:clientMgr list_lock acquired
+09-16 22:27:32.257 D/qcc-vendor( 1732): sig_handle:calling clientMgr list_unlock
+09-16 22:27:32.257 D/qcc-vendor( 1732): sig_handle:clientMgr list_unlocked
+09-16 22:27:32.257 I/qcc-vendor( 1732): ClientMgr: enabled(0), terminated(1), thread_stop(1), thread_created(0) 
+09-16 22:27:32.257 E/qcc-vendor( 1732): cinfo->exit_handler is NULL
+09-16 22:27:32.257 D/qcc-vendor( 1732): get_collector_info:clientMgr list_lock acquired
+09-16 22:27:32.257 D/qcc-vendor( 1732): get_collector_info:calling clientMgr list_unlock
+09-16 22:27:32.257 D/qcc-vendor( 1732): get_collector_info:clientMgr list_unlocked
+09-16 22:27:32.257 D/qcc-vendor( 1732): collector_mgr_remove:calling clientMgr list_lock
+09-16 22:27:32.257 D/qcc-vendor( 1732): collector_mgr_remove:clientMgr list_lock acquired
+09-16 22:27:32.257 I/qcc-vendor( 1732): collector_mgr_remove: module_id: 991063477
+09-16 22:27:32.257 D/qcc-vendor( 1732): collector_mgr_remove:calling clientMgr list_unlock
+09-16 22:27:32.257 D/qcc-vendor( 1732): collector_mgr_remove:clientMgr list_unlocked
+09-16 22:27:32.257 D/qcc-vendor( 1732): sig_handle:calling clientMgr list_lock
+09-16 22:27:32.257 D/qcc-vendor( 1732): sig_handle:clientMgr list_lock acquired
+09-16 22:27:32.258 D/qcc-vendor( 1732): sig_handle:calling clientMgr list_unlock
+09-16 22:27:32.258 D/qcc-vendor( 1732): sig_handle:clientMgr list_unlocked
+09-16 22:27:32.258 E/qcc-vendor( 1732): cinfo->exit_handler is NULL
+09-16 22:27:32.259 I/qcc-vendor( 1732): Recieved Event 1 
+09-16 22:27:32.259 D/qcc-vendor( 1732): sig_handle:calling clientMgr list_lock
+09-16 22:27:32.259 D/qcc-vendor( 1732): sig_handle:clientMgr list_lock acquired
+09-16 22:27:32.259 D/qcc-vendor( 1732): sig_handle:calling clientMgr list_unlock
+09-16 22:27:32.259 D/qcc-vendor( 1732): sig_handle:clientMgr list_unlocked
+09-16 22:27:32.260 I/qcc-vendor( 1732): ClientMgr: enabled(0), terminated(1), thread_stop(1), thread_created(0) 
+09-16 22:27:32.260 D/qcc-trd-alog( 1732): alog_exit_handler()
+09-16 22:27:32.260 I/qcc-trd-alog( 1732): alog_log_end
+09-16 22:27:32.253 I/logcat  ( 1457): type=1400 audit(0.0:1757): avc:  denied  { remove_name } for  name="mainlog.8" dev="sda2" ino=376 scontext=u:r:dumpstate:s0 tcontext=u:object_r:mnt_vendor_file:s0 tclass=dir permissive=1
+09-16 22:27:32.253 I/logcat  ( 1457): type=1400 audit(0.0:1758): avc:  denied  { rename } for  name="mainlog.8" dev="sda2" ino=376 scontext=u:r:dumpstate:s0 tcontext=u:object_r:mnt_vendor_file:s0 tclass=file permissive=1
+09-16 22:27:32.253 I/logcat  ( 1457): type=1400 audit(0.0:1759): avc:  denied  { add_name } for  name="mainlog.9" dev="sda2" ino=375 scontext=u:r:dumpstate:s0 tcontext=u:object_r:mnt_vendor_file:s0 tclass=dir permissive=1
+09-16 22:27:32.253 I/logcat  ( 1457): type=1400 audit(0.0:1760): avc:  denied  { unlink } for  name="mainlog.9" dev="sda2" ino=375 scontext=u:r:dumpstate:s0 tcontext=u:object_r:mnt_vendor_file:s0 tclass=file permissive=1
+09-16 22:27:32.263 D/qcc-vendor( 1732): Waiting Thread Done
+09-16 22:27:32.263 D/qcc-vendor( 1732): Session Manager Main Thread Exit 
+09-16 22:27:32.263 I/qcc-vendor( 1732): stopLTCService called
+09-16 22:27:32.265 D/qcc-trd-mps( 1733): mps_timer_delete : Deleted timer 1
+09-16 22:27:32.265 D/qcc-trd-mps( 1733): mps_timer_delete : Deleted timer 2
+09-16 22:27:32.265 I/qcc-trd-mps( 1733): mps_deregister_qmi: started
+09-16 22:27:32.265 I/qcc-trd-mps( 1733): mps_exit_handler: started
+09-16 22:27:32.265 I/qcc-trd-mps( 1733): mps_main: collector thread exiting
+09-16 22:27:32.265 D/qcc-vendor( 1732): main:calling clientMgr list_lock
+09-16 22:27:32.266 D/qcc-vendor( 1732): main:clientMgr list_lock acquired
+09-16 22:27:32.266 D/qcc-vendor( 1732): main:calling clientMgr list_unlock
+09-16 22:27:32.266 D/qcc-vendor( 1732): main:clientMgr list_unlocked
+09-16 22:27:32.266 I/qcc-vendor( 1732): property_set enabled 0
+09-16 22:27:32.267 I/qcc-trd-udump( 1733): microdump_exit_handler started
+09-16 22:27:32.267 E/qcc-trd ( 1733): write_to_enable_microdump unable to open /sys/module/microdump_collector/parameters/enable_microdump, err:2
+09-16 22:27:32.267 I/qcc-trd-cpu( 1733): CPU Collector thread exiting
+09-16 22:27:32.267 I/qcc-trd ( 1733): cpus collector exited - 0
+09-16 22:27:32.267 I/qcc-vendor( 1732): qcc-trd version: 1.2
+09-16 22:27:32.267 I/qcc-vendor( 1732): Git Commit Id : c1da026b
+09-16 22:27:32.267 I/qcc-vendor( 1732): qcc-trd stopped
+09-16 22:27:32.268 D/qcc-trd-udump( 1733): microdump_exit_handler: mutex destroyed
+09-16 22:27:32.268 D/qcc-trd-udump( 1733): microdump_exit_handler: complete
+09-16 22:27:32.268 I/qcc-trd-udump( 1733): microdump_main: collector thread exiting
+09-16 22:27:32.268 I/qcc-trd ( 1733): micr collector exited - 0
+09-16 22:27:32.268 I/qcc-trd ( 1733): mps collector exited - 0
+09-16 22:27:32.268 I/BpBinder( 1733): onLastStrongRef automatically unlinking death recipients: <uncached descriptor>
+09-16 22:27:32.273 I/wpa_supplicant( 2282): wlan0: CTRL-EVENT-DSCP-POLICY clear_all
+09-16 22:27:32.274 I/wpa_supplicant( 2282): nl80211: deinit ifname=wlan0 disabled_11b_rates=0
+09-16 22:27:32.275 I/BpBinder( 2282): onLastStrongRef automatically unlinking death recipients: android.hardware.wifi.supplicant.ISupplicantStaIfaceCallback
+09-16 22:27:32.276 I/wpa_supplicant( 2282): wlan0: CTRL-EVENT-TERMINATING 
+09-16 22:27:32.277 E/Diag-Router( 1385): diag: Empty read, Close logging pid: 1572, fd 88 
+09-16 22:27:32.277 E/Diag-Router( 1385): diag: diag_close_logging_process: Exiting client (pid: 0) is not an MD client
+09-16 22:27:32.277 E/Diag-Router( 1385): diag: While empty read socket counter:11
+09-16 22:27:32.279 E/vendor.qti.lights( 1163): Couldn't open /sys/class/leds/red/brightness
+09-16 22:27:32.280 E/vendor.qti.lights( 1163): Tri Leds device doesn't exist
+09-16 22:27:32.280 E/vendor.qti.lights( 1163): Tri Leds device doesn't exist
+09-16 22:27:32.280 E/vendor.qti.lights( 1163): Tri Leds device doesn't exist
+09-16 22:27:32.280 E/vendor.qti.lights( 1163): Tri Leds device doesn't exist
+09-16 22:27:32.280 E/vendor.qti.lights( 1163): Tri Leds device doesn't exist
+09-16 22:27:32.280 E/vendor.qti.lights( 1163): Tri Leds device doesn't exist
+09-16 22:27:32.280 E/vendor.qti.lights( 1163): Tri Leds device doesn't exist
+09-16 22:27:32.280 E/vendor.qti.lights( 1163): Tri Leds device doesn't exist
+09-16 22:27:32.281 E/Diag-Router( 1385): diag: Empty read, Close logging pid: 1569, fd 86 
+09-16 22:27:32.281 E/Diag-Router( 1385): diag: diag_close_logging_process: Exiting client (pid: 0) is not an MD client
+09-16 22:27:32.281 E/Diag-Router( 1385): diag: While empty read socket counter:10
+09-16 22:27:32.281 D/txpwrJni( 2467): new aidl event arrived
+09-16 22:27:32.282 I/update_engine( 1726): [INFO:main.cc(86)] A/B Update Engine terminating with exit code 0
+09-16 22:27:32.282 D/txpwrJni( 2467): handleEvent -1
+09-16 22:27:32.282 D/txpwrJni( 2467): handleServiceDown start
+09-16 22:27:32.282 E/.qms    ( 2467): unlinkToDeath: removed reference to death recipient but unlink failed: DEAD_OBJECT
+09-16 22:27:32.282 D/txpwrJni( 2467): isThreadAttached start
+09-16 22:27:32.282 D/txpwrJni( 2467): jni detached
+09-16 22:27:32.283 D/txpwrJni( 2467): jni attached
+09-16 22:27:32.283 D/txpwrJni( 2467): getJavaCallbackClass start
+09-16 22:27:32.283 D/txpwrJni( 2467): getJavaCallbackClass End midIs[1]
+09-16 22:27:32.284 E/txpwradmin:Aidl( 2467): onIServiceBinderAvailable called
+09-16 22:27:32.284 I/txpwrJni( 2467): initialize callback success
+09-16 22:27:32.286 W/.qms    ( 2467): Unlinking to dead binder resulted in: -2
+09-16 22:27:32.286 E/Diag-Router( 1385): diag: Empty read, Close logging pid: 1560, fd 89 
+09-16 22:27:32.286 E/Diag-Router( 1385): diag: diag_close_logging_process: Exiting client (pid: 0) is not an MD client
+09-16 22:27:32.286 E/Diag-Router( 1385): diag: While empty read socket counter:9
+09-16 22:27:32.288 W/SupplicantStaIfaceHalAidlImpl( 1868): ISupplicant binder died. who=android.os.BinderProxy@5299711, service=android.os.BinderProxy@5299711
+09-16 22:27:32.288 E/cnd     ( 1545): unlinkToDeath: removed reference to death recipient but unlink failed: DEAD_OBJECT
+09-16 22:27:32.288 W/SupplicantStaIfaceHalAidlImpl( 1868): Handle supplicant death
+09-16 22:27:32.288 I/SupplicantStaIfaceHalAidlImpl( 1868): Clearing internal state
+09-16 22:27:32.290 I/WifiNative( 1868): wpa_supplicant died. Cleaning up internal state.
+09-16 22:27:32.291 E/Diag-Router( 1385): diag: Empty read, Close logging pid: 1548, fd 87 
+09-16 22:27:32.291 E/Diag-Router( 1385): diag: diag_close_logging_process: Exiting client (pid: 0) is not an MD client
+09-16 22:27:32.292 E/Diag-Router( 1385): diag: While empty read socket counter:8
+09-16 22:27:32.292 D/BufferPoolAccessor2.0( 3201): bufferpool2 0xb4000075f06ada48 : 0(0 size) total buffers - 0(0 size) used buffers - 2/7 (recycle/alloc) - 17/196 (fetch/transfer)
+09-16 22:27:32.292 D/BufferPoolConnection( 3201): connection 13749979883026 closed on death
+09-16 22:27:32.292 D/BufferPoolAccessor2.0( 3201): bufferpool2 0xb4000075f06cc488 : 0(0 size) total buffers - 0(0 size) used buffers - 0/5 (recycle/alloc) - 4/8 (fetch/transfer)
+09-16 22:27:32.292 D/BufferPoolConnection( 3201): connection 13749979883028 closed on death
+09-16 22:27:32.292 D/BufferPoolAccessor2.0( 3201): bufferpool2 0xb4000075f06cc6d8 : 0(0 size) total buffers - 0(0 size) used buffers - 2/7 (recycle/alloc) - 5/146 (fetch/transfer)
+09-16 22:27:32.292 D/BufferPoolConnection( 3201): connection 13749979883030 closed on death
+09-16 22:27:32.293 D/BufferPoolAccessor2.0( 3201): Destruction - bufferpool2 0xb4000075f06ada48 cached: 0/0M, 0/0% in use; allocs: 7, 29% recycled; transfers: 196, 91% unfetched
+09-16 22:27:32.293 D/BufferPoolAccessor2.0( 3201): Destruction - bufferpool2 0xb4000075f06cc488 cached: 0/0M, 0/0% in use; allocs: 5, 0% recycled; transfers: 8, 50% unfetched
+09-16 22:27:32.293 D/BufferPoolAccessor2.0( 3201): Destruction - bufferpool2 0xb4000075f06cc6d8 cached: 0/0M, 0/0% in use; allocs: 7, 29% recycled; transfers: 146, 97% unfetched
+09-16 22:27:32.294 W/libc    (  683): Unable to set property "ctl.interface_start" to "aidl/vendor.qti.data.txpwrservice.ITxPwrService/default": PROP_ERROR_HANDLE_CONTROL_MESSAGE (0x20)
+09-16 22:27:32.296 D/BufferPoolAccessor2.0( 2293): bufferpool2 0xb4000075f06c3e68 : 0(0 size) total buffers - 0(0 size) used buffers - 1/7 (recycle/alloc) - 6/56 (fetch/transfer)
+09-16 22:27:32.297 D/BufferPoolAccessor2.0( 3276): bufferpool2 0xb4000075f06a68f8 : 0(0 size) total buffers - 0(0 size) used buffers - 0/5 (recycle/alloc) - 8/40 (fetch/transfer)
+09-16 22:27:32.302 D/BufferPoolConnection( 3276): connection 14072102430228 closed on death
+09-16 22:27:32.302 D/BufferPoolConnection( 2293): connection 9850149578253 closed on death
+09-16 22:27:32.303 E/Diag-Router( 1385): diag: Empty read, Close logging pid: 1545, fd 85 
+09-16 22:27:32.303 E/Diag-Router( 1385): diag: diag_close_logging_process: Exiting client (pid: 0) is not an MD client
+09-16 22:27:32.303 D/BufferPoolAccessor2.0( 2293): bufferpool2 0xb4000075f06c57d8 : 0(0 size) total buffers - 0(0 size) used buffers - 1/7 (recycle/alloc) - 6/56 (fetch/transfer)
+09-16 22:27:32.303 D/BufferPoolConnection( 2293): connection 9850149578255 closed on death
+09-16 22:27:32.303 E/Diag-Router( 1385): diag: While empty read socket counter:7
+09-16 22:27:32.304 D/BufferPoolAccessor2.0( 2293): Destruction - bufferpool2 0xb4000075f06c3e68 cached: 0/0M, 0/0% in use; allocs: 7, 14% recycled; transfers: 56, 89% unfetched
+09-16 22:27:32.308 I/QCNEJ/NativeHalConnector( 2461): Cnd HIDL Service Died
+09-16 22:27:32.308 I/QCNEJ/NativeHalConnector( 2461): handling CND_SERVER_DOWN
+09-16 22:27:32.309 V/QCNEJ/NativeHalConnector( 2461): disconnect() mCnd=[class or subclass of vendor.qti.hardware.data.cne.internal.server@1.3::ICneService]@Proxy
+09-16 22:27:32.312 E/Perf    ( 5084): Perf Service died.
+09-16 22:27:32.312 E/Perf    ( 4411): Perf Service died.
+09-16 22:27:32.312 E/Perf    ( 4355): Perf Service died.
+09-16 22:27:32.312 E/Perf    ( 3120): Perf Service died.
+09-16 22:27:32.312 E/Perf    ( 5002): Perf Service died.
+09-16 22:27:32.312 E/Perf    ( 5320): Perf Service died.
+09-16 22:27:32.312 E/Perf    ( 3201): Perf Service died.
+09-16 22:27:32.313 E/Perf    ( 3064): Perf Service died.
+09-16 22:27:32.313 E/Perf    ( 4361): Perf Service died.
+09-16 22:27:32.313 E/Perf    ( 3099): Perf Service died.
+09-16 22:27:32.313 E/Perf    ( 5053): Perf Service died.
+09-16 22:27:32.313 E/Perf    ( 3049): Perf Service died.
+09-16 22:27:32.313 E/Perf    ( 3888): Perf Service died.
+09-16 22:27:32.314 E/Perf    ( 2547): Perf Service died.
+09-16 22:27:32.314 E/Perf    ( 4293): Perf Service died.
+09-16 22:27:32.315 E/Perf    ( 2975): Perf Service died.
+09-16 22:27:32.315 E/Perf    ( 3068): Perf Service died.
+09-16 22:27:32.315 E/Perf    ( 3334): Perf Service died.
+09-16 22:27:32.315 E/Perf    ( 6072): Perf Service died.
+09-16 22:27:32.315 E/Perf    ( 2780): Perf Service died.
+09-16 22:27:32.315 E/Perf    ( 4334): Perf Service died.
+09-16 22:27:32.316 E/Perf    ( 2586): Perf Service died.
+09-16 22:27:32.316 E/Perf    ( 4778): Perf Service died.
+09-16 22:27:32.317 E/Perf    ( 4973): Perf Service died.
+09-16 22:27:32.317 E/Perf    ( 4602): Perf Service died.
+09-16 22:27:32.317 E/Perf    ( 2519): Perf Service died.
+09-16 22:27:32.318 E/Perf    ( 2293): Perf Service died.
+09-16 22:27:32.318 W/OneModeManager( 2293): omsvc service binderDied! retry connect 10 times with registerCallback
+09-16 22:27:32.318 E/Perf    ( 3980): Perf Service died.
+09-16 22:27:32.319 E/Perf    ( 3276): Perf Service died.
+09-16 22:27:32.319 E/Perf    ( 2461): Perf Service died.
+09-16 22:27:32.320 E/Perf    ( 2593): Perf Service died.
+09-16 22:27:32.321 E/Perf    ( 3734): Perf Service died.
+09-16 22:27:32.324 E/Perf    ( 4274): Perf Service died.
+09-16 22:27:32.324 E/Perf    ( 3732): Perf Service died.
+09-16 22:27:32.326 I/wificond( 1535): wificond is about to exit
+09-16 22:27:32.327 E/Perf    ( 2481): Perf Service died.
+09-16 22:27:32.328 E/Perf    ( 3254): Perf Service died.
+09-16 22:27:32.329 E/Perf    ( 3944): Perf Service died.
+09-16 22:27:32.330 E/Perf    ( 3375): Perf Service died.
+09-16 22:27:32.330 E/Perf    ( 2674): Perf Service died.
+09-16 22:27:32.331 E/Perf    ( 3223): Perf Service died.
+09-16 22:27:32.332 E/Perf    ( 3209): Perf Service died.
+09-16 22:27:32.332 E/Perf    ( 3800): Perf Service died.
+09-16 22:27:32.333 E/Perf    ( 3854): Perf Service died.
+09-16 22:27:32.333 E/Perf    ( 3047): Perf Service died.
+09-16 22:27:32.333 E/Perf    ( 3271): Perf Service died.
+09-16 22:27:32.333 E/Perf    ( 1868): Perf Service died.
+09-16 22:27:32.333 D/BufferPoolAccessor2.0( 3276): bufferpool2 0xb4000075f06b4948 : 0(0 size) total buffers - 0(0 size) used buffers - 0/5 (recycle/alloc) - 10/40 (fetch/transfer)
+09-16 22:27:32.333 D/BufferPoolConnection( 3276): connection 14072102430229 closed on death
+09-16 22:27:32.334 E/Perf    ( 3300): Perf Service died.
+09-16 22:27:32.335 D/BufferPoolAccessor2.0( 3276): bufferpool2 0xb4000075f06a9988 : 0(0 size) total buffers - 0(0 size) used buffers - 0/5 (recycle/alloc) - 8/40 (fetch/transfer)
+09-16 22:27:32.335 D/BufferPoolConnection( 3276): connection 14072102430230 closed on death
+09-16 22:27:32.335 D/BufferPoolAccessor2.0( 3276): bufferpool2 0xb4000075f06a5d68 : 0(0 size) total buffers - 0(0 size) used buffers - 0/5 (recycle/alloc) - 7/40 (fetch/transfer)
+09-16 22:27:32.335 D/BufferPoolConnection( 3276): connection 14072102430231 closed on death
+09-16 22:27:32.335 E/Perf    ( 3158): Perf Service died.
+09-16 22:27:32.336 D/BufferPoolAccessor2.0( 3276): bufferpool2 0xb4000075f06a1808 : 0(0 size) total buffers - 0(0 size) used buffers - 0/5 (recycle/alloc) - 4/40 (fetch/transfer)
+09-16 22:27:32.336 D/BufferPoolConnection( 3276): connection 14072102430234 closed on death
+09-16 22:27:32.336 D/BufferPoolAccessor2.0( 3276): bufferpool2 0xb4000075f06a8018 : 0(0 size) total buffers - 0(0 size) used buffers - 0/5 (recycle/alloc) - 4/40 (fetch/transfer)
+09-16 22:27:32.336 D/BufferPoolConnection( 3276): connection 14072102430236 closed on death
+09-16 22:27:32.336 D/BufferPoolAccessor2.0( 3276): bufferpool2 0xb4000075f06ab0a8 : 0(0 size) total buffers - 0(0 size) used buffers - 0/5 (recycle/alloc) - 4/40 (fetch/transfer)
+09-16 22:27:32.336 D/BufferPoolConnection( 3276): connection 14072102430237 closed on death
+09-16 22:27:32.337 D/BufferPoolAccessor2.0( 3276): bufferpool2 0xb4000075f06ac7c8 : 0(0 size) total buffers - 0(0 size) used buffers - 0/5 (recycle/alloc) - 5/40 (fetch/transfer)
+09-16 22:27:32.337 D/BufferPoolConnection( 3276): connection 14072102430238 closed on death
+09-16 22:27:32.337 D/BufferPoolAccessor2.0( 3276): bufferpool2 0xb4000075f06acc68 : 0(0 size) total buffers - 0(0 size) used buffers - 0/5 (recycle/alloc) - 17/52 (fetch/transfer)
+09-16 22:27:32.337 D/BufferPoolConnection( 3276): connection 14072102430240 closed on death
+09-16 22:27:32.337 D/BufferPoolAccessor2.0( 3276): bufferpool2 0xb4000075f06ab9e8 : 0(0 size) total buffers - 0(0 size) used buffers - 0/5 (recycle/alloc) - 15/52 (fetch/transfer)
+09-16 22:27:32.337 D/BufferPoolConnection( 3276): connection 14072102430242 closed on death
+09-16 22:27:32.338 D/BufferPoolAccessor2.0( 3276): bufferpool2 0xb4000075f069f558 : 0(0 size) total buffers - 0(0 size) used buffers - 0/5 (recycle/alloc) - 12/24 (fetch/transfer)
+09-16 22:27:32.338 D/BufferPoolConnection( 3276): connection 14072102430245 closed on death
+09-16 22:27:32.338 D/BufferPoolAccessor2.0( 3276): bufferpool2 0xb4000075f06a8df8 : 0(0 size) total buffers - 0(0 size) used buffers - 0/5 (recycle/alloc) - 13/52 (fetch/transfer)
+09-16 22:27:32.338 D/BufferPoolConnection( 3276): connection 14072102430247 closed on death
+09-16 22:27:32.338 D/BufferPoolAccessor2.0( 3276): bufferpool2 0xb4000075f06b54d8 : 0(0 size) total buffers - 0(0 size) used buffers - 0/5 (recycle/alloc) - 10/52 (fetch/transfer)
+09-16 22:27:32.338 D/BufferPoolConnection( 3276): connection 14072102430248 closed on death
+09-16 22:27:32.339 D/BufferPoolAccessor2.0( 3276): bufferpool2 0xb4000075f06b21f8 : 0(0 size) total buffers - 0(0 size) used buffers - 0/5 (recycle/alloc) - 8/24 (fetch/transfer)
+09-16 22:27:32.339 D/BufferPoolConnection( 3276): connection 14072102430250 closed on death
+09-16 22:27:32.339 D/BufferPoolAccessor2.0( 3276): bufferpool2 0xb4000075f06a9e28 : 0(0 size) total buffers - 0(0 size) used buffers - 0/5 (recycle/alloc) - 8/24 (fetch/transfer)
+09-16 22:27:32.339 D/BufferPoolConnection( 3276): connection 14072102430252 closed on death
+09-16 22:27:32.339 D/BufferPoolAccessor2.0( 3276): bufferpool2 0xb4000075f06a84b8 : 0(0 size) total buffers - 0(0 size) used buffers - 0/5 (recycle/alloc) - 4/24 (fetch/transfer)
+09-16 22:27:32.339 D/BufferPoolConnection( 3276): connection 14072102430254 closed on death
+09-16 22:27:32.339 D/BufferPoolAccessor2.0( 3276): Destruction - bufferpool2 0xb4000075f06acc68 cached: 0/0M, 0/0% in use; allocs: 5, 0% recycled; transfers: 52, 67% unfetched
+09-16 22:27:32.341 D/BufferPoolAccessor2.0( 3276): Destruction - bufferpool2 0xb4000075f06a8df8 cached: 0/0M, 0/0% in use; allocs: 5, 0% recycled; transfers: 52, 75% unfetched
+09-16 22:27:32.341 D/BufferPoolAccessor2.0( 3276): Destruction - bufferpool2 0xb4000075f06ab9e8 cached: 0/0M, 0/0% in use; allocs: 5, 0% recycled; transfers: 52, 71% unfetched
+09-16 22:27:32.341 D/BufferPoolAccessor2.0( 3276): Destruction - bufferpool2 0xb4000075f06a68f8 cached: 0/0M, 0/0% in use; allocs: 5, 0% recycled; transfers: 40, 80% unfetched
+09-16 22:27:32.341 D/BufferPoolAccessor2.0( 3276): Destruction - bufferpool2 0xb4000075f06b4948 cached: 0/0M, 0/0% in use; allocs: 5, 0% recycled; transfers: 40, 75% unfetched
+09-16 22:27:32.341 D/BufferPoolAccessor2.0( 3276): Destruction - bufferpool2 0xb4000075f06a9988 cached: 0/0M, 0/0% in use; allocs: 5, 0% recycled; transfers: 40, 80% unfetched
+09-16 22:27:32.342 D/BufferPoolAccessor2.0( 3276): Destruction - bufferpool2 0xb4000075f06a5d68 cached: 0/0M, 0/0% in use; allocs: 5, 0% recycled; transfers: 40, 83% unfetched
+09-16 22:27:32.342 D/BufferPoolAccessor2.0( 3276): Destruction - bufferpool2 0xb4000075f06a1808 cached: 0/0M, 0/0% in use; allocs: 5, 0% recycled; transfers: 40, 90% unfetched
+09-16 22:27:32.343 D/BufferPoolAccessor2.0( 3276): Destruction - bufferpool2 0xb4000075f06a8018 cached: 0/0M, 0/0% in use; allocs: 5, 0% recycled; transfers: 40, 90% unfetched
+09-16 22:27:32.343 D/BufferPoolAccessor2.0( 3276): Destruction - bufferpool2 0xb4000075f06ab0a8 cached: 0/0M, 0/0% in use; allocs: 5, 0% recycled; transfers: 40, 90% unfetched
+09-16 22:27:32.343 D/BufferPoolAccessor2.0( 3276): Destruction - bufferpool2 0xb4000075f06ac7c8 cached: 0/0M, 0/0% in use; allocs: 5, 0% recycled; transfers: 40, 88% unfetched
+09-16 22:27:32.343 D/BufferPoolAccessor2.0( 3276): Destruction - bufferpool2 0xb4000075f069f558 cached: 0/0M, 0/0% in use; allocs: 5, 0% recycled; transfers: 24, 50% unfetched
+09-16 22:27:32.343 E/Perf    ( 3090): Perf Service died.
+09-16 22:27:32.344 D/BufferPoolAccessor2.0( 3276): Destruction - bufferpool2 0xb4000075f06b54d8 cached: 0/0M, 0/0% in use; allocs: 5, 0% recycled; transfers: 52, 81% unfetched
+09-16 22:27:32.344 D/BufferPoolAccessor2.0( 3276): Destruction - bufferpool2 0xb4000075f06b21f8 cached: 0/0M, 0/0% in use; allocs: 5, 0% recycled; transfers: 24, 67% unfetched
+09-16 22:27:32.344 W/Installer( 1868): installd died; reconnecting
+09-16 22:27:32.344 D/BufferPoolAccessor2.0( 3276): Destruction - bufferpool2 0xb4000075f06a9e28 cached: 0/0M, 0/0% in use; allocs: 5, 0% recycled; transfers: 24, 67% unfetched
+09

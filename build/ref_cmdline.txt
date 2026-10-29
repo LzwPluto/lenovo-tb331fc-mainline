@@ -1,0 +1,1 @@
+console=tty0 console=ttyMSM0,115200n8 earlycon=qcom_geni,0x4a90000 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 root=/dev/sda18 rw ignore_loglevel

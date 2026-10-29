@@ -1,4 +1,4 @@
-﻿*.img
+*.img
 *.bin
 *.cpio
 *.cpio.gz
@@ -7,11 +7,30 @@
 *.o
 *.ko
 *.dis
-build/
-firmware/
+__pycache__/
+*.pyc
+
+# Ignore old kernel binary experiments in build
+build/Image*
+build/ref_Image*
+build/ref_kernel.gz
+build/ref_ramdisk.gz
+build/*.dtbo
+build/modroot/
+build/modules-6.14.tar.gz
+
+# Ignore large temporary build and extracted rootfs directories
 extracted/
 rootfs/
 initramfs/
+firmware/
 ref/android/android-dmesg.txt
 dump/logdump.img
 dump/logfs.img
+
+# Ignore extracted raw 11,429 loose dt_base files (tracked as android_live_dt_base.tar.gz)
+dump/android_pulled_assets/dt_base/
+
+# Allow essential firmware assets
+!dump/android_pulled_assets/audio_fw/aw883xx_acf.bin
+!dump/android_pulled_assets/bt_firmware/image/*.bin
